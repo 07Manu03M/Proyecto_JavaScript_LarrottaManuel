@@ -47,3 +47,20 @@ h1, p {
     opacity: 0.7;
   }
 }
+
+.buttonGlow {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Lora, serif;
+    margin-top: 2em;
+    transition: all 0.3s ease;
+  }
+  
+  .buttonGlow:hover {
+    background-color: white;
+    color: black;
+  }
