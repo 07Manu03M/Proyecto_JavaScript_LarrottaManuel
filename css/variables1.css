@@ -1,0 +1,17 @@
+:root{
+    --color-gradiant-1: rgba(16, 16, 16, 0.729);
+    --color-gradiant-2: rgba(16, 16, 16, 0.892);
+}
+
+@font-face {
+    font-family: "Cinzel_Decorative-regular";
+    src: url(../storage/font/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+@font-face {
+    font-family: "cormorant_garamond-light";
+    src: url(../storage/font/Cormorant_Garamond/static/CormorantGaramond-Light.ttf);
+}
+@font-face {
+    font-family: "MedievalSharp-Regular";
+    src: url(../storage/font/MedievalSharp/MedievalSharp-Regular.ttf);
+}
