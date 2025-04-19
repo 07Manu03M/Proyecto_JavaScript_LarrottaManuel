@@ -69,3 +69,127 @@ main {
   background-color: white;
   color: black;
   }
+
+
+  @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+@import url(variables1.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(var(--color-gradiant-1), var(--color-gradiant-2)), url(https://img.goodfon.com/original/1920x1080/2/19/dungeons-dragons-curse-of-strahd-podzemelia-i-drakony-nastol.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.caja_main h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-family: "MedievalSharp-Regular";
+}
+
+.caja_main p {
+  font-family: "Cinzel_Decorative-regular";
+  width: 100%;
+  max-width: 800px;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  line-height: 1.8;
+  padding: 0 1rem;
+}
+
+.caja_main .glowIn {
+  color: white;
+}
+
+.caja_main .glowIn span {
+  animation: glow-in 0.5s both;
+}
+
+@keyframes glow-in {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px white;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+.caja_main .buttonGlow {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Lora, serif;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+.caja_main .buttonGlow:hover {
+  background-color: white;
+  color: black;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 350px) {
+  .caja_main h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .caja_main p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    width: 90%;
+    text-align: center;
+  }
+
+  .caja_main .buttonGlow {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    margin-bottom: 1rem;
+  }
+
+  main {
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .caja_main p {
+    width: 70%;
+  }
+}
+
+/* Laptops grandes y escritorio */
+@media (min-width: 1025px) {
+  .caja_main p {
+    width: 70%;
+  }
+}
