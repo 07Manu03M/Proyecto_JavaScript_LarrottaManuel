@@ -1,11 +1,67 @@
-let menusito = document.getElementById("menusito");
-let div_aside = document.querySelector(".div_aside")
-let menucito = document.getElementById("menucito")
-let div_imagen = document.querySelector(".div_imagen")
+let create = document.getElementById("home");
+let characters = document.getElementById("characters");
+let darkmode = document.getElementById("mode_dark");
+let sundark = document.getElementById("mode_light");
+let light = document.getElementById("mode_light");
+let moonlight = document.getElementById("mode_dark");
+let theme = localStorage.getItem("theme");
+let darkchange = document.querySelector(".modedark");
+let lightchange = document.querySelector(".modelight");
+let logo = document.getElementById("logo_Drag");
+let darklogo = document.getElementById("logo_Drag")
 
-menusito.addEventListener("click",()=>{
-    div_aside.classList.toggle("mini_menuaside");
+create.addEventListener("click",()=>{
+    window.location.href = "../views/example.html"
 })
-menucito.addEventListener("click",()=>{
-    div_aside.classList.toggle("mini_menuaside")
+characters.addEventListener("click",()=>{
+    window.location.href = "../views/example.html"
+})
+darkmode.addEventListener("click",()=>{
+    if (darkmode.src.includes("light.png")) {
+        darkmode.src = "../storage/img/bi_moon-fill.svg";
+        sundark.src = "../storage/img/akar-icons_sun-fill.svg"
+        logo.src = "../storage/img/414P9RxxsuL.png"
+        localStorage.setItem("theme", "light");
+    } else {
+        darkmode.src = "../storage/img/luna_prendida.svg";
+        sundark.src = "../storage/img/sol_desactivado.svg"
+        logo.src = "../storage/img/dragonblanco.png"
+        localStorage.setItem("theme", "dark");
+    }
+})
+
+sundark.addEventListener("click",()=>{
+    if(light.src.includes("dark.png")){
+        light.src = "../storage/img/sol_desactivado.svg"
+        moonlight.src = "../storage/img/luna_prendida.svg"
+        darklogo.src = "../storage/img/dragonblanco.png"
+
+        localStorage.setItem("theme", "dark");
+    } else{
+        light.src = "../storage/img/akar-icons_sun-fill.svg"
+        moonlight.src = "../storage/img/bi_moon-fill.svg"
+        darklogo.src = "../storage/img/414P9RxxsuL.png"
+        localStorage.setItem("theme", "light");
+    }
+})
+
+if (theme === "light") {
+    darkmode.src = "../storage/img/bi_moon-fill.svg";
+    sundark.src = "../storage/img/akar-icons_sun-fill.svg";
+} else if (theme === "dark") {
+    darkmode.src = "../storage/img/luna_prendida.svg";
+    sundark.src = "../storage/img/sol_desactivado.svg";
+    logo.src = "../storage/img/dragonblanco.png"
+    document.body.classList.add("dark-mode");
+}
+
+darkchange.addEventListener("click",()=>{
+    let body = document.body;
+    body.classList.toggle("dark-mode");
+    localStorage.setItem("theme", "dark");
+})
+lightchange.addEventListener("click",()=>{
+    let body = document.body;
+    body.classList.toggle("dark-mode");
+    localStorage.setItem("theme", "light");
 })

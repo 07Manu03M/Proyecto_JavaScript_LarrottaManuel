@@ -1,0 +1,15 @@
+/************************** light mode *******************/
+:root{
+    --color--body-: #fff;
+    --color-house-: brightness(0) invert(1);
+    --color-botones: #000;
+    --color-texto: #fff;
+}
+
+/************************* MODO OSCURO ******************/
+.dark-mode{
+    --color--body-: #1e1e1e;
+    --color-house-: none;
+    --color-botones: #fff;
+    --color-texto: #000;
+}
