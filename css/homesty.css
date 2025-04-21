@@ -38,10 +38,11 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+/* BOTON 1 */
 .caja_header .cajita_botones .boton1{
-  color: var(--color-texto);
-  background: var(--color-botones);
-  border: 1px rgb(52, 52, 52) solid;
+  color: var(--color-botones);
+  background: var(--color-texto);
+  border: 1px var(--color-borde) solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,12 +50,19 @@ body{
   width: 150px;
   height: 40px;
   border-radius: 20px;
-  transition: background 0.5s ease;
+  transition: background 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease ;
+  cursor: pointer;
+  font-family: "cinzel_decorative_regular";
 }
 .caja_header .cajita_botones .boton1 img{
   max-width: 20px;
-  filter: var(--color-house-);
+  filter: var(--color-house-2);
 }
+.caja_header .cajita_botones .boton1:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px var(--color-zombra-actual);
+}
+/* BOTON 2 */
 .caja_header .cajita_botones .boton2{
   color: var(--color-texto);
   background: var(--color-botones);
@@ -66,13 +74,20 @@ body{
   width: 150px;
   height: 40px;
   border-radius: 20px;
-  transition: background 0.5s ease;
+  transition: background 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease ;
+  cursor: pointer;
+  font-family: "cinzel_decorative_regular";
 }
 .caja_header .cajita_botones .boton2 img{
   max-width: 20px;
   filter: var(--color-house-);
   transition: filter 0.5s ease;
 }
+.caja_header .cajita_botones .boton2:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px var(--color-zombra);
+}
+/* BOTON 3 */
 .caja_header .cajita_botones .boton3{
   color: var(--color-texto);
   background: var(--color-botones);
@@ -84,11 +99,17 @@ body{
   width: 150px;
   height: 40px;
   border-radius: 20px;
-  transition: background 0.5s ease, color 0.5s ease;
+  transition: background 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease ;
+  cursor: pointer;
+  font-family: "cinzel_decorative_regular";
 }
 .caja_header .cajita_botones .boton3 img{
   max-width: 20px;
   filter: var(--color-house-);
+}
+.caja_header .cajita_botones .boton3:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px var(--color-zombra);
 }
 /********************** MOOD OSCURO **********************/
 .mode_dark{
@@ -102,6 +123,12 @@ body{
 .mode_dark img{
   max-width: 40px;
   /* border: 2px slateblue solid; */
+  cursor: pointer;
+}
+.mode_dark img:hover{
+  max-width: 40px;
+  /* border: 2px slateblue solid; */
+  cursor: pointer;
 }
 
 /******************************* CAJA MAIN *****************************/
@@ -148,4 +175,5 @@ body{
   color: white;
   font-size: 3rem;
   text-shadow: 2px 2px 4px #000;
+  font-family: "medieval_sharp-regular";
 }

@@ -16,34 +16,21 @@ create.addEventListener("click",()=>{
 characters.addEventListener("click",()=>{
     window.location.href = "../views/example.html"
 })
-darkmode.addEventListener("click",()=>{
-    if (darkmode.src.includes("light.png")) {
-        darkmode.src = "../storage/img/bi_moon-fill.svg";
-        sundark.src = "../storage/img/akar-icons_sun-fill.svg"
-        logo.src = "../storage/img/414P9RxxsuL.png"
-        localStorage.setItem("theme", "light");
-    } else {
-        darkmode.src = "../storage/img/luna_prendida.svg";
-        sundark.src = "../storage/img/sol_desactivado.svg"
-        logo.src = "../storage/img/dragonblanco.png"
-        localStorage.setItem("theme", "dark");
-    }
-})
+darkmode.addEventListener("click", () => {
+    document.body.classList.remove("dark-mode"); // activa modo oscuro
+    darkmode.src = "../storage/img/luna_prendida.svg";
+    sundark.src = "../storage/img/sol_desactivado.svg";
+    logo.src = "../storage/img/dragonblanco.png";
+    localStorage.setItem("theme", "dark");
+});
 
-sundark.addEventListener("click",()=>{
-    if(light.src.includes("dark.png")){
-        light.src = "../storage/img/sol_desactivado.svg"
-        moonlight.src = "../storage/img/luna_prendida.svg"
-        darklogo.src = "../storage/img/dragonblanco.png"
-
-        localStorage.setItem("theme", "dark");
-    } else{
-        light.src = "../storage/img/akar-icons_sun-fill.svg"
-        moonlight.src = "../storage/img/bi_moon-fill.svg"
-        darklogo.src = "../storage/img/414P9RxxsuL.png"
-        localStorage.setItem("theme", "light");
-    }
-})
+sundark.addEventListener("click", () => {
+    document.body.classList.add("dark-mode"); // desactiva modo oscuro
+    light.src = "../storage/img/akar-icons_sun-fill.svg";
+    moonlight.src = "../storage/img/bi_moon-fill.svg";
+    darklogo.src = "../storage/img/414P9RxxsuL.png";
+    localStorage.setItem("theme", "light");
+});
 
 if (theme === "light") {
     darkmode.src = "../storage/img/bi_moon-fill.svg";
