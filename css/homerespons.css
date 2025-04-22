@@ -1,0 +1,123 @@
+/* PC RESPONSIVE DESING */
+
+@media (min-width: 1025px) {
+    .caja_main{
+        height: 3300px;
+    }
+    .caja_header{
+        height: 100px;
+    }
+    .imagen_div{
+        height: 80vh;
+    }
+}
+
+/* TABLET RESPONSIVE DESING */
+/* CELULAR TIPO S */
+
+@media screen and (max-width: 374px){
+    .caja_header{
+        display: flex;
+        gap: 5%;
+        /* border: 2px blue solid; */
+        display: flex;
+        align-items: center;
+        height: px;
+    }
+    .menu_div img{
+        max-width: 90px;
+    }
+    .ocultar_home{
+        display: none;
+    }
+    .caja_header .cajita_botones .boton1{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton2{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton3{
+        width: 40px;
+    }
+    .caja_header .cajita_botones{
+        width: 150px;
+    }
+    .mode_dark{
+        /* border: 2px seagreen solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        gap: 5px;
+      }
+      .mode_dark img{
+        max-width: 30px;
+        /* border: 2px slateblue solid; */
+        cursor: pointer;
+      }
+      .mode_dark img:hover{
+        cursor: pointer;
+        transform: scale(1);
+      }
+      .menu_div{
+        width: 85px;
+      } 
+      .menu_div img{
+        width: 85px;
+      }
+      .overlay h1{
+        font-size: 30px;
+        width: 90%;
+      } 
+      .caja_main{
+        /* border: 2px red solid; */
+        height: 3100px;
+        gap: 2%;
+      }
+      .div_sections{
+        gap: 2%;
+      }
+      .caja_section .div_bienvenido h1{
+        font-size: 20px;
+        text-align: center;
+
+      }
+      .caja_section{
+        height: 440px;
+        padding: 15px;
+      }
+      .div_bienvenido{
+        width: 800px;
+        height: 100%;
+      }
+      .caja_section .div_bienvenido p{
+        font-size: 17px;
+        text-align: center;
+      }
+      /* COMO USAR */
+      .section_usar{
+        padding: 15px;
+        height: 480px;
+        /* border: 2px red solid; */
+      }
+      .div_titulo_usar h1{
+        font-size: 20px;
+        text-align: center;
+        /* border: 2px blue solid; */
+        width: 95%;
+        margin: auto;
+      }
+      .como_usar{
+        /* border: 2px salmon solid; */
+        width: 95%;
+      }
+      .lista_comousar{
+        /* border: 2px seagreen solid; */
+        width: 100%;
+      }
+      .lista_comousar li{
+        font-size: 17px;
+        text-align: left;
+        /* border: 2px saddlebrown solid; */
+      }
+}      

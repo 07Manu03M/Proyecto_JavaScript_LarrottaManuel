@@ -28,7 +28,6 @@ body{
 .menu_div img{
     max-width: 150px;
     /* border: 2px blueviolet solid; */
-
 }
 /************************* BOTONES  ***********************/
 .caja_header .cajita_botones{
@@ -127,7 +126,6 @@ body{
   cursor: pointer;
 }
 .mode_dark img:hover{
-  max-width: 40px;
   /* border: 2px slateblue solid; */
   cursor: pointer;
 }
