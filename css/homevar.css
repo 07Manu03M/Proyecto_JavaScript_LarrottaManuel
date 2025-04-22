@@ -9,6 +9,7 @@
     --color-zombra: #000000;
     --color-borde: rgb(154, 154, 154);
     --color-letra: #000;
+    --color-responsive: none;
 }
 
 /************************* MODO OSCURO ******************/
@@ -22,6 +23,7 @@
     --color-zombra: #ffffff;
     --color-borde: #000;
     --color-letra: #fff; 
+    --color-responsive: invert(1);
 }
 
 @font-face {

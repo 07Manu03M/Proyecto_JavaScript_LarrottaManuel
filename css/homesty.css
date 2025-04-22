@@ -135,7 +135,7 @@ body{
 /******************************* CAJA MAIN *****************************/
 .caja_main{
   /* border: 2px red solid; */
-  height: 1800px;
+  height: 3100px;
   display: flex;
   flex-direction: column;
   gap: 6%;
@@ -200,7 +200,7 @@ body{
 .div_sections{
   display: flex;
   flex-direction: column;
-  gap: 12%;
+  gap: 3%;
 }
 .caja_section{
   /* border: 2px blue solid; */
@@ -210,7 +210,7 @@ body{
   box-shadow: 0 0 15px 3px var(--color-zombra);
   justify-content: space-evenly;
   align-items: center;
-  height: 500px;
+  height: 650px;
   width: 90%;
   margin: auto;
   transition: transform 0.3s ease;
@@ -253,7 +253,7 @@ body{
   background: var(--color-texto);
   border-radius: 20px;
   box-shadow: 0 0 15px 3px var(--color-zombra);
-  padding: 20px;
+  padding: 40px;
   width: 90%;
   height: 600px;
   display: flex;
@@ -262,6 +262,7 @@ body{
   margin: auto;
   align-items: center;
   transition: transform 0.3s ease;
+
 }
 .section_usar:hover{
   transform: scale(1.05);
@@ -283,13 +284,14 @@ body{
   align-items: center;
 }
 .como_usar img{
-  max-width: 400px;
+  max-width: 350px;
   /* border: 2px violet solid; */
+  border-radius: 50px;
 }
 .lista_comousar {
   /* border: 2px black solid; */
-  width: 50%;
-  height: 100%;
+  width: 60%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -302,4 +304,166 @@ body{
   font-family: "cormorant_garamond-medimun";
   color: var(--color-letra);
 }
+
+/************************** COMO JUGAR ***********************/
+
+.como_funciona {
+  border-radius: 20px;
+  background: var(--color-texto);
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 600px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.como_funciona:hover{
+  transform: scale(1.05);
+}
+.div_funciona-information {
+  /* border: 2px saddlebrown solid; */
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.div_funciona-information h1{
+  /* border: 2px rgb(72, 94, 191) solid; */
+  font-size: 55px;
+  font-family: "cinzel_decorative_regular";
+  color: var(--color-letra);
+}
+.div_funciona-information ul{
+  /* border: 2px rgb(24, 10, 93) solid; */
+  font-size: 30px;
+  font-family: "cormorant_garamond-medimun";
+  list-style-type: none;
+  color: var(--color-letra);
+}
+.div_funciona-information li{
+  /* border: 2px rgb(213, 24, 153) solid; */
+}
+.imagen_como-funciona {
+  /* border: 2px rgb(51, 18, 31) solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen_como-funciona img{
+  /* border: 2px rgb(138, 236, 40) solid; */
+  max-width: 400px;
+  border-radius: 40px;
+}
+
+/* SECTION RESPONSE */
+
+.section_responsive {
+  /* border: 2px blue solid; */
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  height: 400px;
+}
+.div_objetivo {
+  padding: 30px;
+  background: var(--color-texto);
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9%;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+.div_objetivo:hover{
+  transform: scale(1.05);
+}
+.titulo_obj {
+  /* border: 2px rgb(106, 175, 162) solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_obj h1{
+  /* border: 2px rgb(184, 198, 32) solid; */
+  font-family: "cinzel_decorative_regular";
+  font-size: 28px;
+  color: var(--color-letra);
+}
+.desc_obj {
+  /* border: 2px rgb(119, 14, 65) solid; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.desc_obj img{
+  /* border: 2px rgb(60, 179, 66) solid; */
+  max-width: 180px;
+}
+.desc_obj p{
+  /* border: 2px rgb(22, 170, 116) solid; */
+  font-family: "cormorant_garamond-medimun";
+  font-size: 25px;
+  width: 60%;
+  color: var(--color-letra);
+}
+.div_respons {
+  padding: 30px;
+  background: var(--color-texto);
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  border-radius: 20px;
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7%;
+  transition: transform 0.5s ease;
+}
+
+.div_respons:hover{
+  transform: scale(1.05);
+}
+.titulo_respons {
+  /* border: 2px rgb(179, 0, 255) solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_respons h1{
+  /* border: 2px rgb(115, 115, 173) solid; */
+  font-size: 28px;
+  font-family: "cinzel_decorative_regular";
+  color: var(--color-letra);
+}
+.desc_respons {
+  /* border: 2px rgb(246, 189, 231) solid; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.desc_respons img{
+  /* border: 2px rgb(105, 153, 21) solid; */
+  max-width: 180px;
+  filter: var(--color-responsive);
+}
+.desc_respons img{
+  
+}
+.desc_respons p{
+  /* border: 2px rgb(12, 12, 118) solid; */
+  font-family: "cormorant_garamond-medimun";
+  font-size: 25px;
+  width: 60%;
+  color: var(--color-letra);
+}
+
+
 
