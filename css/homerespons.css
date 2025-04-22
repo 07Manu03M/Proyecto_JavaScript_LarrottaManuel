@@ -75,7 +75,7 @@
         gap: 2%;
       }
       .div_sections{
-        gap: 2%;
+        gap: 4%;
       }
       .caja_section .div_bienvenido h1{
         font-size: 20px;
@@ -120,4 +120,82 @@
         text-align: left;
         /* border: 2px saddlebrown solid; */
       }
+      /************ COMO FUNCIONA *****************/
+      .como_funciona {
+        /* border: 2px red solid; */
+        height: 300px;
+        padding: 20px;
+      }
+      .div_funciona-information {
+        /* border: 2px rgb(56, 76, 127) solid; */
+        width: 300px;
+      }
+      .div_funciona-information ul{
+        /* border: 2px rgb(36, 120, 18) solid; */
+      }
+      .div_funciona-information ul li{
+        /* border: 2px rgb(0, 0, 0) solid; */
+        font-size: 17px;
+      }
+      .div_funciona-information h1{
+        /* border: 2px rgb(179, 1, 255) solid; */
+        font-size: 20px;
+      }
+
+      /* RESPONSE */
+      .section_responsive {
+        /* border: 2px red solid; */
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        gap: 15%;
+      }
+      .div_objetivo {
+        /* border: 2px blue solid; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+      }
+      .titulo_obj {
+        /* border: 2px yellow solid; */
+        width: 100%;
+      }
+      .titulo_obj h1{
+        /* border: 2px blueviolet solid; */
+        font-size: 20px;
+        width: 100%;
+      }
+      .desc_obj {
+        /* border: 2px green solid; */
+        width: 100%;
+      }
+      .desc_obj p{
+        /* border: 2px slateblue solid; */
+        font-size: 17px;
+        width: 100%;
+      }
+      .div_respons {
+        /* border: 2px salmon solid; */
+        width: 100%;
+      }
+      .titulo_respons {
+        /* border: 2px blue solid; */
+        text-align: center;
+      }
+      .titulo_respons h1{
+        /* border: 2px blueviolet solid; */
+        font-size: 20px;
+      }
+      .desc_respons {
+        /* border: 2px green solid; */
+      }
+      .desc_respons p{
+        /* border: 2px yellow solid; */
+        font-size: 17px;
+        width: 100%;
+      }
+      
 }      
