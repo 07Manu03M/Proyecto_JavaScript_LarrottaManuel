@@ -16,29 +16,29 @@ body{
 .caja_header{
     height: 70px;
     display: flex;
-    /* border: 2px red solid; */
     justify-content: space-around;
 }
 .menu_div{
-  /* border: 2px blue solid; */
   height: 100%;
   display: flex;
   align-items: center;
 }
 .menu_div img{
     max-width: 150px;
-    /* border: 2px blueviolet solid; */
 }
+
 /************************* BOTONES  ***********************/
+
 .caja_header .cajita_botones{
-  /* border: 2px black solid; */
   width: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
-/* BOTON 1 */
+
+/************************* BOTON 1 ************************/
+
 .caja_header .cajita_botones .boton1{
   color: var(--color-botones);
   background: var(--color-texto);
@@ -62,7 +62,9 @@ body{
   transform: scale(1.1);
   box-shadow: 0 0 10px 2px var(--color-zombra-actual);
 }
-/* BOTON 2 */
+
+/************************* BOTON 2 ***************************/
+
 .caja_header .cajita_botones .boton2{
   color: var(--color-texto);
   background: var(--color-botones);
@@ -87,7 +89,9 @@ body{
   transform: scale(1.1);
   box-shadow: 0 0 10px 2px var(--color-zombra);
 }
-/* BOTON 3 */
+
+/****************************** BOTON 3 ***************************/
+
 .caja_header .cajita_botones .boton3{
   color: var(--color-texto);
   background: var(--color-botones);
@@ -111,9 +115,10 @@ body{
   transform: scale(1.1);
   box-shadow: 0 0 10px 2px var(--color-zombra);
 }
+
 /********************** MOOD OSCURO **********************/
+
 .mode_dark{
-  /* border: 2px seagreen solid; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,17 +127,15 @@ body{
 }
 .mode_dark img{
   max-width: 40px;
-  /* border: 2px slateblue solid; */
   cursor: pointer;
 }
 .mode_dark img:hover{
-  /* border: 2px slateblue solid; */
   cursor: pointer;
 }
 
 /******************************* CAJA MAIN *****************************/
+
 .caja_main{
-  /* border: 2px red solid; */
   height: 3100px;
   display: flex;
   flex-direction: column;
@@ -144,7 +147,6 @@ body{
   left: 0;
   width: 200px; 
   height: 100%;
-  /* background-color: purple; */
   z-index: 999; 
   transition: width 0.5s ease, img 0.5s ease;
 }
@@ -183,6 +185,7 @@ body{
   text-shadow: 2px 2px 4px #000;
   font-family: "medieval_sharp-regular";
 }
+/********************************** ANIMACION FLOTANTE ****************************/
 .flotando {
   display: inline-block;
   animation: flotar 2.5s ease-in-out infinite;
@@ -194,14 +197,14 @@ body{
   100% { transform: translateY(); }
 }
 
-/* SECTION PART */
+/************************************** SECTION PART *********************************/
+
 .div_sections{
   display: flex;
   flex-direction: column;
   gap: 3%;
 }
 .caja_section{
-  /* border: 2px blue solid; */
   display: flex;
   background: var(--color-texto);
   border-radius: 20px;
@@ -217,7 +220,6 @@ body{
   transform: scale(1.05);
 }
 .div_bienvenido{
-  /* border: 2px rgb(0, 0, 0) solid; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -225,7 +227,6 @@ body{
   height: 350px;
 }
 .caja_section .div_bienvenido h1{
-  /* border: 2px blueviolet solid; */
   font-size: 50px;
   text-align: left;
   font-family: "cinzel_decorative_regular";
@@ -233,7 +234,6 @@ body{
 }
 
 .caja_section .div_bienvenido p{
-  /* border: 2px yellow solid; */
   font-size: 25px;
   text-align: left;
   font-family: "cormorant_garamond-medimun";
@@ -241,12 +241,12 @@ body{
 }
 
 .caja_section img{
-  /* border: 2px rebeccapurple solid; */
   max-width: 300px;
 }
 
 
-/* LISTA DE COMO USAR */
+/********************************** LISTA DE COMO USAR ***********************************/
+
 .section_usar{
   background: var(--color-texto);
   border-radius: 20px;
@@ -266,7 +266,6 @@ body{
   transform: scale(1.05);
 }
 .div_titulo_usar h1{
-  /* border: 2px seagreen solid; */
   font-size: 50px;
   font-family: "cinzel_decorative_regular";
   color: var(--color-letra);
@@ -276,18 +275,15 @@ body{
   height: 400px;
   display: flex;
   width: 80%;
-  /* border: 2px blue solid; */
   justify-content: center;
   justify-content: space-between;
   align-items: center;
 }
 .como_usar img{
   max-width: 350px;
-  /* border: 2px violet solid; */
   border-radius: 50px;
 }
 .lista_comousar {
-  /* border: 2px black solid; */
   width: 60%;
   height: 85%;
   display: flex;
@@ -297,7 +293,6 @@ body{
   
 }
 .lista_comousar li{
-  /* border: 2px yellow solid; */
   font-size: 25px;
   font-family: "cormorant_garamond-medimun";
   color: var(--color-letra);
@@ -322,7 +317,6 @@ body{
   transform: scale(1.05);
 }
 .div_funciona-information {
-  /* border: 2px saddlebrown solid; */
   width: 60%;
   height: 100%;
   display: flex;
@@ -330,37 +324,29 @@ body{
   justify-content: space-evenly;
 }
 .div_funciona-information h1{
-  /* border: 2px rgb(72, 94, 191) solid; */
   font-size: 55px;
   font-family: "cinzel_decorative_regular";
   color: var(--color-letra);
 }
 .div_funciona-information ul{
-  /* border: 2px rgb(24, 10, 93) solid; */
   font-size: 30px;
   font-family: "cormorant_garamond-medimun";
   list-style-type: none;
   color: var(--color-letra);
 }
-.div_funciona-information li{
-  /* border: 2px rgb(213, 24, 153) solid; */
-}
 .imagen_como-funciona {
-  /* border: 2px rgb(51, 18, 31) solid; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .imagen_como-funciona img{
-  /* border: 2px rgb(138, 236, 40) solid; */
   max-width: 400px;
   border-radius: 40px;
 }
 
-/* SECTION RESPONSE */
+/************************************* SECTION RESPONSE *********************************/
 
 .section_responsive {
-  /* border: 2px blue solid; */
   display: flex;
   width: 90%;
   justify-content: center;
@@ -386,28 +372,23 @@ body{
   transform: scale(1.05);
 }
 .titulo_obj {
-  /* border: 2px rgb(106, 175, 162) solid; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .titulo_obj h1{
-  /* border: 2px rgb(184, 198, 32) solid; */
   font-family: "cinzel_decorative_regular";
   font-size: 28px;
   color: var(--color-letra);
 }
 .desc_obj {
-  /* border: 2px rgb(119, 14, 65) solid; */
   display: flex;
   justify-content: space-evenly;
 }
 .desc_obj img{
-  /* border: 2px rgb(60, 179, 66) solid; */
   max-width: 180px;
 }
 .desc_obj p{
-  /* border: 2px rgb(22, 170, 116) solid; */
   font-family: "cormorant_garamond-medimun";
   font-size: 25px;
   width: 60%;
@@ -431,37 +412,80 @@ body{
   transform: scale(1.05);
 }
 .titulo_respons {
-  /* border: 2px rgb(179, 0, 255) solid; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .titulo_respons h1{
-  /* border: 2px rgb(115, 115, 173) solid; */
   font-size: 28px;
   font-family: "cinzel_decorative_regular";
   color: var(--color-letra);
 }
 .desc_respons {
-  /* border: 2px rgb(246, 189, 231) solid; */
   display: flex;
   justify-content: space-evenly;
 }
 .desc_respons img{
-  /* border: 2px rgb(105, 153, 21) solid; */
   max-width: 180px;
   filter: var(--color-responsive);
 }
-.desc_respons img{
-  
-}
 .desc_respons p{
-  /* border: 2px rgb(12, 12, 118) solid; */
   font-family: "cormorant_garamond-medimun";
   font-size: 25px;
   width: 60%;
   color: var(--color-letra);
 }
+
+/******************************************* PORQUE USARLO? *********************************/
+
+.porqueusar {
+  border-radius: 20px;
+  width: 90%;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+  background: var(--color-texto);
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  transition: transform 0.5s ease;
+}
+.porqueusar:hover{
+  transform: scale(1.05);
+}
+.titulo_usar {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  gap: 10%;
+  width: 70%;
+}
+.titulo_usar h1{
+  font-size: 40px;
+  font-family: "cinzel_decorative_regular";
+  color: var(--color-letra);
+}
+.lista_usar {
+  display: flex;
+  gap: 10%;
+}
+.lista_usar img{
+  max-width: 300px;
+  border-radius: 20%;
+}
+.titulo_usar ul{
+  list-style-type: none;
+}
+.titulo_usar ul li{
+  color: var(--color-letra);
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-family: "cormorant_garamond-medimun";
+}
+
+
 
 
 
