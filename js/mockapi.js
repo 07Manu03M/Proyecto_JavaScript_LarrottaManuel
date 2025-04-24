@@ -1,14 +1,14 @@
 document.getElementById('userForm').addEventListener('submit', async function(e) {
     e.preventDefault(); // evita recargar la página
   
-    const username = document.getElementById('username').value;
-    const clases = document.getElementById('claseSelect').value;
-    const monster = document.getElementById('claseSelect').value;
+    const username = document.getElementById("username").value;
+    const razas = document.getElementById("RaceSelect").value;
+    const clases = document.getElementById("ClasesSelect")
   
     const data = {
       name: username,
-      clase: clases,
-      monsters: monster
+      race: razas,
+      classes: clases
     };
   
     try {

@@ -25,3 +25,16 @@
     --color-letra: #fff; 
     --color-responsive: invert(1);
 }
+
+@font-face {
+    font-family: "cinzel_decorative_regular";
+    src: url(../storage/font/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+@font-face {
+    font-family: "cormorant_garamond-medimun";
+    src: url(../storage/font/Cormorant_Garamond/static/CormorantGaramond-Medium.ttf);
+}
+@font-face {
+    font-family: "medieval_sharp-regular";
+    src: url(../storage/font/MedievalSharp/MedievalSharp-Regular.ttf);
+}

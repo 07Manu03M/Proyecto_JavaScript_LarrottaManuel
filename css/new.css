@@ -136,12 +136,12 @@ body{
 }
 
 /******************************* CAJA MAIN *****************************/
-
 .caja_main{
-    height: 3100px;
+   /* border: 2px red solid; */
+    height: 2100px;
     display: flex;
     flex-direction: column;
-    gap: 6%;
+    gap: 5%;
   }
   .caja_main .div_aside{
     position: fixed;
@@ -169,6 +169,7 @@ body{
   }
     
   .overlay {
+    /* border: 2px yellow solid; */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -182,6 +183,7 @@ body{
   }
     
   .overlay h1 {
+    /* border: 2px pink solid; */
     color: white;
     font-size: 3rem;
     text-shadow: 2px 2px 4px #000;
@@ -198,29 +200,491 @@ body{
     50%  { transform: translateY(-20px); }
     100% { transform: translateY(); }
   }
-  
-  .paso {
-    display: none;
-    margin-bottom: 20px;
+
+  /* SECTION CREAR */
+  .contenedor-selects{
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border: 2px seagreen solid;
+    height: 1300px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    box-shadow: 0 0 10px 2px var(--color-zombra);
+    border-radius: 20px;
+  }
+  .caja_main .section_crear {
+    /* border: 2px red solid; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+  }
+  .titulo_crear h1{
+    /* border: 2px yellow solid; */
+    color: var(--color-letra);
+    font-size: 40px;
+    font-family: "cinzel_decorative_regular";
+  }
+  .nombre_crear{
+    /* border: 2px rgb(223, 135, 235) solid; */
+    width: 85%;
+    height: 100px;
+    margin-left: 7.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+  }
+  .titulo_nombre{
+    /* background: red; */
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
+    color: var(--color-letra);
+  }
+  .input_nombre{
+    /* border: 2px salmon solid; */
+  }
+
+  .nombre_nuevo{
+    /* border: 2px slategray solid; */
+    padding-left: 30px;
+  }
+  .input_nombre input{
+    border-radius: 20px;
+    /* border: 2px rgb(56, 140, 225) solid; */
+    font-family: "cormorant_garamond-medimun";
+    font-size: 17px;
+    height: 40px;
+    width: 95%;
+    padding: 20px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+  }
+
+  /* RAZAS */
+
+  #RaceSelect{
+    /* border: 2px red solid; */
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 93%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
+  }
+  .razas_div{
+    /* border: 2px salmon solid; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 90px;
+    justify-content: space-between;
+  }
+
+  .div_raza{
+    /* border: 2px blue solid; */
+  }
+  .div_raza span{
+    color: var(--color-letra);
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
+  }
+
+  /* CLASES */
+  #ClasesSelect{
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 93%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
+  }
+  .clases_div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 90px;
+    justify-content: space-between;
+    color: var(--color-letra);
+  }
+  .div_clase {
+  }
+  .div_clase span{
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
+  }
+
+  /* GENDER */
+  #genderselect{
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 93%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
+  }
+  .genero_div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 90px;
+    justify-content: space-between;
+    color: var(--color-letra);
+  }
+  .div_genero {
+  }
+  .div_genero span{
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
   }
   
-  .paso.activo {
-    display: block;
+  /* ARMADURA */
+
+  #armourSelect{
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 93%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
   }
-  
-  button {
-    padding: 10px 15px;
-    background: #222;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .armour_div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 90px;
+    justify-content: space-between;
+    color: var(--color-letra);
   }
-  
-  select {
-    padding: 10px;
-    font-size: 1rem;
-    margin-top: 10px;
+  .div_armour {
+  }
+  .div_armour span{
+    color: var(--color-letra);
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
+  }
+
+  /* ARMAS */
+
+  #weaponSelect{
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 93%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
+  }
+  .weapon_div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 90px;
+    justify-content: space-between;
+    color: var(--color-letra);
+  }
+  .div_weapon {
+  }
+  .div_weapon span{
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
+    color: var(--color-letra);
+  }
+
+  /* HABILIDADES */
+
+
+  .habilidades {
+    /* border: 2px rgb(77, 110, 66) solid; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 150px;
+    gap: 10px;
+  }
+  .titulo_hab {
+    /* border: 2px rgb(167, 188, 47) solid; */
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
+    color: var(--color-letra);
+  }
+  .destrezas{
+    /* border: 2px blue solid; */
+    display: flex;
+    height: 170px;
+    justify-content: space-between;
+  }
+  .input_Fuerza {
+    /* border: 2px rgb(74, 0, 148) solid; */
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 15%;
+    padding-left: 20px;
+    border-radius: 20px;
+  }
+  .fuerza_numero{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .fuerza_numero input{
+    color: var(--color-letra);
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
     width: 100%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
   }
+  .fuerza_numero span{
+    color: var(--color-letra);
+    font-size: 20px;
+    font-family: "cormorant_garamond-medimun";
+  }
+
+  /* DESTREZA */
+
+  .input_Destreza {
+    /* border: 2px rgb(74, 0, 148) solid; */
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 15%;
+    padding-left: 20px;
+    border-radius: 20px;
+  }
+  .Destreza_numero {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .Destreza_numero input{
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
+  }
+  .Destreza_numero span{
+    color: var(--color-letra);
+    font-size: 20px;
+    font-family: "cormorant_garamond-medimun";
+  }
+  /* INTELIGENCIA */
+
+  .input_Inteligencia {
+    /* border: 2px rgb(74, 0, 148) solid; */
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 15%;
+    padding-left: 20px;
+    border-radius: 20px;
+  }
+  .Inteligencia_numero {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .Inteligencia_numero input{
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+  }
+  .Inteligencia_numero span{
+    font-size: 20px;
+    font-family: "cormorant_garamond-medimun";
+    color: var(--color-letra);
+  }
+  /* HABILIDAD */
+
+  .input_habilidad {
+    /* border: 2px rgb(74, 0, 148) solid; */
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 15%;
+    padding-left: 20px;
+    border-radius: 20px;
+  }
+  .habilidad_numero {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .habilidad_numero input{
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+  }
+  .habilidad_numero span{
+    font-size: 20px;
+    font-family: "cormorant_garamond-medimun";
+    color: var(--color-letra);
+  }
+
+  /* SABIDURIA */
+
+  .input_sabiduria {
+    /* border: 2px rgb(74, 0, 148) solid; */
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 15%;
+    padding-left: 20px;
+    border-radius: 20px;
+  }
+  .sabiduria_numero {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .sabiduria_numero input{
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+  }
+  .sabiduria_numero span{
+    font-size: 20px;
+    font-family: "cormorant_garamond-medimun";
+    color: var(--color-letra);
+  }
+
+  /* SPELLS */
+  #spellSelect{
+    color: var(--color-letra);
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 93%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+  }
+  .spell_div {
+    color: var(--color-letra);
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 90px;
+    justify-content: space-between;
+  }
+  .div_spell {
+  }
+  .div_spell span{
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
+  }
+
+  /* ACCESORIOS */
+  #accesorSelect{
+    color: var(--color-letra);
+    font-size: 17px;
+    font-family: "cormorant_garamond-medimun";
+    height: 40px;
+    width: 93%;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+  }
+  .accesor_div {
+    color: var(--color-letra);
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
+    height: 90px;
+    justify-content: space-between;
+  }
+  .div_accesor {
+  }
+  .div_accesor span{
+    color: var(--color-letra);
+    font-size: 30px;
+    font-family: "cormorant_garamond-medimun";
+  }
+  
+  
+  
+
+  
+
+  
+
+
+  
   
