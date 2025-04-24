@@ -14,7 +14,7 @@ create.addEventListener("click",()=>{
     window.location.href = "../views/newcharacter.html"
 })
 characters.addEventListener("click",()=>{
-    window.location.href = "../views/example.html"
+    window.location.href = "../views/saved.html"
 })
 darkmode.addEventListener("click", () => {
     document.body.classList.remove("dark-mode"); // activa modo oscuro

@@ -137,7 +137,6 @@ body{
 
 /******************************* CAJA MAIN *****************************/
 .caja_main{
-   /* border: 2px red solid; */
     height: 2100px;
     display: flex;
     flex-direction: column;
@@ -169,7 +168,6 @@ body{
   }
     
   .overlay {
-    /* border: 2px yellow solid; */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -183,13 +181,14 @@ body{
   }
     
   .overlay h1 {
-    /* border: 2px pink solid; */
     color: white;
     font-size: 3rem;
     text-shadow: 2px 2px 4px #000;
     font-family: "medieval_sharp-regular";
   }
+
   /********************************** ANIMACION FLOTANTE ****************************/
+
   .flotando {
     display: inline-block;
     animation: flotar 2.5s ease-in-out infinite;
@@ -201,13 +200,12 @@ body{
     100% { transform: translateY(); }
   }
 
-  /* SECTION CREAR */
+  /************************************** SECTION CREAR **********************************/
   .contenedor-selects{
     padding: 30px;
     display: flex;
     gap: 20px;
     flex-direction: column;
-    /* border: 2px seagreen solid; */
     height: 1300px;
     width: 90%;
     margin: auto;
@@ -245,10 +243,6 @@ body{
     font-family: "cormorant_garamond-medimun";
     color: var(--color-letra);
   }
-  .input_nombre{
-    /* border: 2px salmon solid; */
-  }
-
   .nombre_nuevo{
     /* border: 2px slategray solid; */
     padding-left: 30px;
@@ -264,6 +258,7 @@ body{
     background: var(--color-texto);
     border: 1px var(--color-borde) solid;
     box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
   }
 
   /* RAZAS */
@@ -543,6 +538,7 @@ body{
     background: var(--color-texto);
     border: 1px var(--color-borde) solid;
     box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
   }
   .Inteligencia_numero span{
     font-size: 20px;
@@ -576,6 +572,7 @@ body{
     background: var(--color-texto);
     border: 1px var(--color-borde) solid;
     box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
   }
   .habilidad_numero span{
     font-size: 20px;
@@ -610,6 +607,7 @@ body{
     background: var(--color-texto);
     border: 1px var(--color-borde) solid;
     box-shadow: 0 0 5px 1px var(--color-zombra);
+    color: var(--color-letra);
   }
   .sabiduria_numero span{
     font-size: 20px;

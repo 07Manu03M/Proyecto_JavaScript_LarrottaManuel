@@ -21,13 +21,13 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
       race: razas,
       classes: clases,
       gender: genero,
-      armour: armadura,
+      armor: armadura,
       weapons: arma,
       strong: fuerza,
-      destress: destreza,
+      skill: destreza,
       smart: inteligencia,
       hability: habilidad,
-      sabidury: sabiduria,
+      wisdom: sabiduria,
       spells: hechizos,
       accesories: accesorios
     };
@@ -42,9 +42,9 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
       });
   
       const result = await response.json();
-      console.log('Usuario guardado:', result);
+        alert('Usuario guardado:', result);
     } catch (error) {
-      console.error('Error al guardar usuario:', error);
+        alert('Error al guardar usuario:', error);
     }
   });
   

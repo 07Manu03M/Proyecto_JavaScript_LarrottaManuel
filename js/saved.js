@@ -8,13 +8,13 @@ let theme = localStorage.getItem("theme");
 let darkchange = document.querySelector(".modedark");
 let lightchange = document.querySelector(".modelight");
 let logo = document.getElementById("logo_Drag");
-let darklogo = document.getElementById("logo_Drag")
+let darklogo = document.getElementById("logo_Drag");
 
 create.addEventListener("click",()=>{
     window.location.href = "../views/home.html"
 })
 characters.addEventListener("click",()=>{
-    window.location.href = "../views/saved.html"
+    window.location.href = "../views/newcharacter.html"
 })
 darkmode.addEventListener("click", () => {
     document.body.classList.remove("dark-mode"); // activa modo oscuro
@@ -52,4 +52,3 @@ lightchange.addEventListener("click",()=>{
     body.classList.toggle("dark-mode");
     localStorage.setItem("theme", "light");
 })
-

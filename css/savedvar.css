@@ -1,0 +1,41 @@
+/************************** light mode *******************/
+:root{
+    --color--body-: #fff;
+    --color-house-: brightness(0) invert(1);
+    --color-house-2: none;
+    --color-botones: #000;
+    --color-texto: #fff;
+    --color-zombra-actual: #000000;
+    --color-zombra: #000000;
+    --color-borde: rgb(154, 154, 154);
+    --color-letra: #000;
+    --color-responsive: none;
+}
+
+/************************* MODO OSCURO ******************/
+.dark-mode{
+    --color--body-: #1e1e1e;
+    --color-house-: none;
+    --color-house-2: brightness(0) invert(1);
+    --color-botones: #fff;
+    --color-texto: #000;
+    --color-zombra-actual: #ffffff;
+    --color-zombra: #ffffff;
+    --color-borde: #000;
+    --color-letra: #fff; 
+    --color-responsive: invert(1);
+}
+
+
+@font-face {
+    font-family: "cinzel_decorative_regular";
+    src: url(../storage/font/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+@font-face {
+    font-family: "cormorant_garamond-medimun";
+    src: url(../storage/font/Cormorant_Garamond/static/CormorantGaramond-Medium.ttf);
+}
+@font-face {
+    font-family: "medieval_sharp-regular";
+    src: url(../storage/font/MedievalSharp/MedievalSharp-Regular.ttf);
+}

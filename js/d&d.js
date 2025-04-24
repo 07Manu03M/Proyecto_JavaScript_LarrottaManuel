@@ -69,12 +69,12 @@ getClasses(data => {
 
 // GENERO
 
-const clases = ["Hombre", "Mujer", "Otro"];
+const clases = ["Man", "Women", "Other"];
 const select = document.getElementById("genderselect");
 
 // Crear opción por defecto tipo placeholder
 const defaultOption = document.createElement("option");
-defaultOption.textContent = "Ej. Hombre";
+defaultOption.textContent = "Ej. Man";
 select.appendChild(defaultOption);
 
 // Agregar tus opciones manuales

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/saved.css">
+    <title>Saved</title>
+</head>
+<body>
+
+    <dialog id="myDialog">
+        <p>¡Hola! Esta es una ventana de diálogo.</p>
+        <button id="closeDialog">Cerrar</button>
+    </dialog>
+    <!--------------------- ENCABEZADO -------------------------------->
+
+    <header class="caja_header"> 
+        <div class="menu_div">
+            <img id="logo_Drag" src="../storage/img/414P9RxxsuL.png" alt="">
+        </div>
+        <div class="cajita_botones">
+            <button id="home" class="boton1">
+                <img src="../storage/img/home-outline.svg" alt="">
+                <p class="ocultar_home">Home</p>
+            </button>
+            <button id="characters" class="boton2">
+                <img src="../storage/img/add-circle-outline.svg" alt="">
+                <p class="ocultar_home">Create New</p>
+            </button>
+            <button class="boton3">
+                <img src="../storage/img/save-outline.svg" alt="">
+                <p class="ocultar_home">Characters</p>
+            </button>
+        </div>
+        <div class="mode_dark">
+            <img class="modelight" id="mode_light" src="../storage/img/akar-icons_sun-fill.svg" alt="">
+            <img class="modedark" id="mode_dark" src="../storage/img/bi_moon-fill.svg" alt="">
+        </div>
+    </header>
+
+    <!------------------- CUERPO MAIN ----------------------------->
+
+    <main class="caja_main">
+        <div class="imagen_div">
+          <img src="/storage/img/dnd-dragon-in-the-mountain-p3cxbaskwh0xpawq.jpg" alt="">
+          <div class="overlay">
+            <h1 class="flotando">Look at your characters here!</h1>
+          </div>
+        </div>
+        <div class="titulito">
+            <h1>Your Characters</h1>
+        </div>
+        <section class="section" id="lahoja">
+        </section>
+    </main>    
+    <script src="../js/saved.js"></script>
+    <script src="../js/save.js"></script>
+</body>
+</html>
