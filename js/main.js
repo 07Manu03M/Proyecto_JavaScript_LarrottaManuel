@@ -13,5 +13,5 @@ glowInTexts.forEach(glowInText => {
 });
 
 botonsito.addEventListener("click",()=>{
-    window.location.href = "views/example.html";
+    window.location.href = "views/home.html";
 })

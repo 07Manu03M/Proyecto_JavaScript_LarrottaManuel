@@ -1,0 +1,491 @@
+@import url(homevar.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background: var(--color--body-);
+  transition: background 0.5s ease;
+  height: 1000px;
+}
+
+/******************************* ENCABEZADO ***************************/
+
+.caja_header{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu_div{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu_div img{
+    max-width: 150px;
+}
+
+/************************* BOTONES  ***********************/
+
+.caja_header .cajita_botones{
+  width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/************************* BOTON 1 ************************/
+
+.caja_header .cajita_botones .boton1{
+  color: var(--color-botones);
+  background: var(--color-texto);
+  border: 1px var(--color-borde) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  transition: background 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease ;
+  cursor: pointer;
+  font-family: "cinzel_decorative_regular";
+}
+.caja_header .cajita_botones .boton1 img{
+  max-width: 20px;
+  filter: var(--color-house-2);
+}
+.caja_header .cajita_botones .boton1:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px var(--color-zombra-actual);
+}
+
+/************************* BOTON 2 ***************************/
+
+.caja_header .cajita_botones .boton2{
+  color: var(--color-texto);
+  background: var(--color-botones);
+  border: 1px rgb(52, 52, 52) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  transition: background 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease ;
+  cursor: pointer;
+  font-family: "cinzel_decorative_regular";
+}
+.caja_header .cajita_botones .boton2 img{
+  max-width: 20px;
+  filter: var(--color-house-);
+  transition: filter 0.5s ease;
+}
+.caja_header .cajita_botones .boton2:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px var(--color-zombra);
+}
+
+/****************************** BOTON 3 ***************************/
+
+.caja_header .cajita_botones .boton3{
+  color: var(--color-texto);
+  background: var(--color-botones);
+  border: 1px rgb(52, 52, 52) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  transition: background 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease ;
+  cursor: pointer;
+  font-family: "cinzel_decorative_regular";
+}
+.caja_header .cajita_botones .boton3 img{
+  max-width: 20px;
+  filter: var(--color-house-);
+}
+.caja_header .cajita_botones .boton3:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px var(--color-zombra);
+}
+
+/********************** MOOD OSCURO **********************/
+
+.mode_dark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  justify-content: space-evenly;
+}
+.mode_dark img{
+  max-width: 40px;
+  cursor: pointer;
+}
+.mode_dark img:hover{
+  cursor: pointer;
+}
+
+/******************************* CAJA MAIN *****************************/
+
+.caja_main{
+  height: 3100px;
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
+}
+.caja_main .div_aside{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; 
+  height: 100%;
+  z-index: 999; 
+  transition: width 0.5s ease, img 0.5s ease;
+}
+
+.imagen_div {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+  
+.imagen_div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 100px;
+}
+  
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.386);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.overlay h1 {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #000;
+  font-family: "medieval_sharp-regular";
+}
+/********************************** ANIMACION FLOTANTE ****************************/
+.flotando {
+  display: inline-block;
+  animation: flotar 2.5s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(); }
+}
+
+/************************************** SECTION PART *********************************/
+
+.div_sections{
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+.caja_section{
+  display: flex;
+  background: var(--color-texto);
+  border-radius: 20px;
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  justify-content: space-evenly;
+  align-items: center;
+  height: 650px;
+  width: 90%;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+.caja_section:hover{
+  transform: scale(1.05);
+}
+.div_bienvenido{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 800px;
+  height: 350px;
+}
+.caja_section .div_bienvenido h1{
+  font-size: 50px;
+  text-align: left;
+  font-family: "cinzel_decorative_regular";
+  color: var(--color-letra);
+}
+
+.caja_section .div_bienvenido p{
+  font-size: 25px;
+  text-align: left;
+  font-family: "cormorant_garamond-medimun";
+  color: var(--color-letra);
+}
+
+.caja_section img{
+  max-width: 300px;
+}
+
+
+/********************************** LISTA DE COMO USAR ***********************************/
+
+.section_usar{
+  background: var(--color-texto);
+  border-radius: 20px;
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  padding: 40px;
+  width: 90%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  transition: transform 0.3s ease;
+
+}
+.section_usar:hover{
+  transform: scale(1.05);
+}
+.div_titulo_usar h1{
+  font-size: 50px;
+  font-family: "cinzel_decorative_regular";
+  color: var(--color-letra);
+}
+
+.como_usar {
+  height: 400px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.como_usar img{
+  max-width: 350px;
+  border-radius: 50px;
+}
+.lista_comousar {
+  width: 60%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  
+}
+.lista_comousar li{
+  font-size: 25px;
+  font-family: "cormorant_garamond-medimun";
+  color: var(--color-letra);
+}
+
+/************************** COMO JUGAR ***********************/
+
+.como_funciona {
+  border-radius: 20px;
+  background: var(--color-texto);
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 600px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.como_funciona:hover{
+  transform: scale(1.05);
+}
+.div_funciona-information {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.div_funciona-information h1{
+  font-size: 55px;
+  font-family: "cinzel_decorative_regular";
+  color: var(--color-letra);
+}
+.div_funciona-information ul{
+  font-size: 30px;
+  font-family: "cormorant_garamond-medimun";
+  list-style-type: none;
+  color: var(--color-letra);
+}
+.imagen_como-funciona {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen_como-funciona img{
+  max-width: 400px;
+  border-radius: 40px;
+}
+
+/************************************* SECTION RESPONSE *********************************/
+
+.section_responsive {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  height: 400px;
+}
+.div_objetivo {
+  padding: 30px;
+  background: var(--color-texto);
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9%;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+.div_objetivo:hover{
+  transform: scale(1.05);
+}
+.titulo_obj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_obj h1{
+  font-family: "cinzel_decorative_regular";
+  font-size: 28px;
+  color: var(--color-letra);
+}
+.desc_obj {
+  display: flex;
+  justify-content: space-evenly;
+}
+.desc_obj img{
+  max-width: 180px;
+}
+.desc_obj p{
+  font-family: "cormorant_garamond-medimun";
+  font-size: 25px;
+  width: 60%;
+  color: var(--color-letra);
+}
+.div_respons {
+  padding: 30px;
+  background: var(--color-texto);
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  border-radius: 20px;
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7%;
+  transition: transform 0.5s ease;
+}
+
+.div_respons:hover{
+  transform: scale(1.05);
+}
+.titulo_respons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_respons h1{
+  font-size: 28px;
+  font-family: "cinzel_decorative_regular";
+  color: var(--color-letra);
+}
+.desc_respons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.desc_respons img{
+  max-width: 180px;
+  filter: var(--color-responsive);
+}
+.desc_respons p{
+  font-family: "cormorant_garamond-medimun";
+  font-size: 25px;
+  width: 60%;
+  color: var(--color-letra);
+}
+
+/******************************************* PORQUE USARLO? *********************************/
+
+.porqueusar {
+  border-radius: 20px;
+  width: 90%;
+  margin: auto;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+  background: var(--color-texto);
+  box-shadow: 0 0 15px 3px var(--color-zombra);
+  transition: transform 0.5s ease;
+}
+.porqueusar:hover{
+  transform: scale(1.05);
+}
+.titulo_usar {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  gap: 10%;
+  width: 70%;
+}
+.titulo_usar h1{
+  font-size: 40px;
+  font-family: "cinzel_decorative_regular";
+  color: var(--color-letra);
+}
+.lista_usar {
+  display: flex;
+  gap: 10%;
+}
+.lista_usar img{
+  max-width: 300px;
+  border-radius: 20%;
+}
+.titulo_usar ul{
+  list-style-type: none;
+}
+.titulo_usar ul li{
+  color: var(--color-letra);
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-family: "cormorant_garamond-medimun";
+}
+
+
+
+
+
