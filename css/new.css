@@ -233,7 +233,7 @@ body{
     /* border: 2px rgb(223, 135, 235) solid; */
     width: 85%;
     height: 100px;
-    margin-left: 7.5%;
+    margin-left: 9%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -676,6 +676,39 @@ body{
     color: var(--color-letra);
     font-size: 30px;
     font-family: "cormorant_garamond-medimun";
+  }
+
+
+  .btonsito{
+    /* border: 2px red solid; */
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .btonsito button{
+    /* border: 2px blue solid; */
+    width: 20%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    background: var(--color-texto);
+    border: 1px var(--color-borde) solid;
+    box-shadow: 0 0 5px 1px var(--color-zombra);
+    font-family: "cormorant_garamond-medimun";
+    color: var(--color-texto);
+    background: var(--color-zombra);
+    border: 1px var(--color-borde) solid;
+    transition: transform 0.5s ease;
+  }
+
+
+  .btonsito button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px var(--color-zombra-actual);
   }
   
   

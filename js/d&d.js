@@ -110,7 +110,7 @@ getarmours(data => {
   // Agregar <option> por cada armadura
   data.forEach(armour => {
     const option = document.createElement("option");
-    option.value = armour.id;  // Usar el ID como valor
+    option.value = armour.name;  // Usar el ID como valor
     option.textContent = armour.name;  // El nombre de la armadura
     select.appendChild(option);
   });
@@ -145,7 +145,7 @@ getweapons(data => {
   // Agregar <option> por cada armadura
   data.forEach(weapons => {
     const option = document.createElement("option");
-    option.value = weapons.id;  // Usar el ID como valor
+    option.value = weapons.name;  // Usar el ID como valor
     option.textContent = weapons.name;  // El nombre de la armadura
     select.appendChild(option);
   });
@@ -217,7 +217,7 @@ getacce(data => {
   // Agregar <option> por cada armadura
   data.forEach(weapons => {
     const option = document.createElement("option");
-    option.value = weapons.id;  // Usar el ID como valor
+    option.value = weapons.name;  // Usar el ID como valor
     option.textContent = weapons.name;  // El nombre de la armadura
     select.appendChild(option);
   });

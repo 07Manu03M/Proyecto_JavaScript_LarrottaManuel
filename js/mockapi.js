@@ -3,12 +3,33 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
   
     const username = document.getElementById("username").value;
     const razas = document.getElementById("RaceSelect").value;
-    const clases = document.getElementById("ClasesSelect")
+    const clases = document.getElementById("ClasesSelect").value;
+    const genero = document.getElementById("genderselect").value;
+    const armadura = document.getElementById("armourSelect").value;
+    const arma = document.getElementById("weaponSelect").value;
+    const fuerza = document.getElementById("fuerza").value;
+    const destreza = document.getElementById("destreza").value;
+    const inteligencia = document.getElementById("inteligencia").value;
+    const habilidad = document.getElementById("habilidad").value;
+    const sabiduria = document.getElementById("sabiduria").value;
+    const hechizos = document.getElementById("spellSelect").value;
+    const accesorios = document.getElementById("accesorSelect").value;
+
   
     const data = {
       name: username,
       race: razas,
-      classes: clases
+      classes: clases,
+      gender: genero,
+      armour: armadura,
+      weapons: arma,
+      strong: fuerza,
+      destress: destreza,
+      smart: inteligencia,
+      hability: habilidad,
+      sabidury: sabiduria,
+      spells: hechizos,
+      accesories: accesorios
     };
   
     try {
