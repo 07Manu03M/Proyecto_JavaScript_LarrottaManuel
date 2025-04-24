@@ -12,11 +12,17 @@ getcharacters(data => {
         const article = document.createRange().createContextualFragment(`
             <div class="caja_personaje">
                 <div class="peque_informacion">
-                    <h2>${personaje.name}</h2>
-                    <span>${personaje.gender}</span>
-                    <p>${personaje.race}</p>
+                    <h2>✨${personaje.name}✨</h2>
+                    <br>
+                    <span>Race: ${personaje.race}</span>
+                    <span>Classes: ${personaje.classes}</span>
+                    <span>Gender: ${personaje.gender}</span>
+                    <span>Armour: ${personaje.armour}</span>
+                    <span>Weapons: ${personaje.weapons}</span>
+                    <span>Fuerza: (${personaje.strong}) Destress: (${personaje.destress}) <br> Smart: (${personaje.smart}) Sabidury:(${personaje.sabidury})</span>
+                    <span>Spells: ${personaje.spells}</span>
+                    <span>Accesories: ${personaje.accesories}</span>
                 </div>
-                <button id="paravermas" class="botonsito">Ver mas</button>
             </div>
         `);
 
@@ -26,9 +32,3 @@ getcharacters(data => {
 });
 
 
-let paraver = document.getElementById("#paravermas")
-
-
-paraver.addEventListener("click",()=>{
-    alert("te amo breyner")
-})
