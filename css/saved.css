@@ -25,6 +25,7 @@ body{
 }
 .menu_div img{
     max-width: 150px;
+    cursor: pointer
 }
 
 /************************* BOTONES  ***********************/

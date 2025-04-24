@@ -1,5 +1,7 @@
 /************************* PC RESPONSIVE DESING *************************/
+.caja_header{
 
+}
 /*************************** BOTONES **************************/
 
 /************************* MODO OSCURO ***************************/
@@ -27,7 +29,7 @@
   } 
   .caja_main{
     /* border: 2px red solid; */
-    height: 3400px;
+    height: 3500px;
     gap: 5%;
   }
 
@@ -44,25 +46,27 @@
   /******************* CAJA DE BIENVENIDA *******************/
   .div_bienvenido{
     padding: 20px;
+    height: 400px;
 
   }
   /************************ COMO USAR ***********************/
 
   .section_usar{
-    
+    height: 650px;
   }
   .div_titulo_usar h1{
     text-align: center;
   }
   .como_usar{
     display: flex;
+    width: 90%;
     gap: 5%;
   }
   .lista_comousar{
     width: 300%;
   }
   .lista_comousar li{
-    width: 120%;
+    width: 100%;
   }
 
   /********************** COMO FUNCIONA ********************/
@@ -71,6 +75,9 @@
     display: flex;
     gap: 5%;
     
+  }
+  .div_funciona-information h1{
+    text-align: center;
   }
   .div_funciona-information ul li{
     width: 85%;
@@ -81,10 +88,11 @@
     max-width: 350px;
   }
   /******************************************* PORQUE USARLO? *********************************/
-
   .titulo_usar ul li{
     width: 90%;
 }
+.porqueusar{
+  height: 550px;
 }
 
 /********************* CELULAR RESPONSIVE DESING *****************************/
@@ -99,7 +107,7 @@
         gap: 5%;
         display: flex;
         align-items: center;
-        height: px;
+        height: 50px;
     }
     .menu_div img{
         max-width: 90px;
@@ -161,7 +169,7 @@
       /************************* SECTIONS ***********************/
 
       .div_sections{
-        gap: 4%;
+        gap: 3%;
       }
       .caja_section{
         height: 440px;
@@ -272,7 +280,7 @@
   width: 90%;
   height: 660px;
   padding: 20px;
-  margin-top: 30%;
+  margin-top: 35%;
 }
 .titulo_usar {
   display: flex;
@@ -574,7 +582,7 @@ font-size: 17px;
     /************************* SECTIONS ***********************/
   
     .div_sections{
-      gap: 2%;
+      gap: 3%;
     }
     .caja_section{
       height: 440px;
@@ -590,7 +598,7 @@ font-size: 17px;
     }
     .div_bienvenido{
       width: 800px;
-      height: 70%;
+      height: 90%;
     }
     .caja_section .div_bienvenido p{
       font-size: 17px;
@@ -755,8 +763,8 @@ font-size: 17px;
   } 
   .caja_main{
     /* border: 2px red solid; */
-    height: 3050px;
-    gap: 4%;
+    height: 3100px;
+    gap: 5%;
   }
 
   /************************* SECTIONS ***********************/

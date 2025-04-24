@@ -8,7 +8,12 @@ let theme = localStorage.getItem("theme");
 let darkchange = document.querySelector(".modedark");
 let lightchange = document.querySelector(".modelight");
 let logo = document.getElementById("logo_Drag");
-let darklogo = document.getElementById("logo_Drag")
+let darklogo = document.getElementById("logo_Drag");
+let back = document.getElementById("logo_Drag")
+
+back.addEventListener("click",()=>{
+    window.location.href = "../index.html"
+})
 
 create.addEventListener("click",()=>{
     window.location.href = "../views/home.html"
