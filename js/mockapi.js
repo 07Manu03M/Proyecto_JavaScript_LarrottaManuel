@@ -42,7 +42,7 @@ document.getElementById('userForm').addEventListener('submit', async function(e)
       });
   
       const result = await response.json();
-        alert('Usuario guardado:', result);
+        alert('Saved user: Check the characters section', result);
     } catch (error) {
         alert('Error al guardar usuario:', error);
     }

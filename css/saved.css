@@ -269,3 +269,545 @@ body{
     width: 50%;
     height: 30px;
 }
+
+
+/* RESPONSIVE DESING PHONE S*/
+/********************* CELULAR RESPONSIVE DESING *****************************/
+/************************** CELULAR TIPO S **********************************/
+
+@media screen and (min-width: 320px) and (max-width: 350px){
+
+  /************************** HEADER SECCION **********************/
+
+    .caja_header{
+        display: flex;
+        gap: 5%;
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+    .menu_div img{
+        max-width: 90px;
+    }
+    .ocultar_home{
+        display: none;
+    }
+    .menu_div{
+        width: 85px;
+    } 
+    .menu_div img{
+        width: 85px;
+    }
+
+    /*************************** BOTONES **************************/
+
+    .caja_header .cajita_botones .boton1{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton2{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton3{
+        width: 40px;
+    }
+    .caja_header .cajita_botones{
+        width: 150px;
+    }
+
+    /************************* MODO OSCURO ***************************/
+    .mode_dark{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        gap: 5px;
+      }
+      .mode_dark img{
+        max-width: 30px;
+        cursor: pointer;
+      }
+      .mode_dark img:hover{
+        cursor: pointer;
+        transform: scale(1);
+      }
+
+      /******************* CAJA MAIN *************************/
+
+      .overlay h1{
+        font-size: 30px;
+        width: 90%;
+      } 
+      .caja_main{
+        /* border: 2px red solid; */
+        height: 2900px;
+        gap: 2%;
+      }
+
+      .titulito h1{
+        font-size: 25px;
+        text-align: center;
+        /* border: 2px rgb(40, 179, 139) solid; */
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        /* border: 2px red solid; */
+        width: 90%;
+        height: 700px;
+        margin-left: 16px;
+    }
+    .section h1{
+        text-align: center;
+        /* border: 2px rgb(40, 179, 139) solid; */
+    }
+    .titulito{
+        /* border: 2px rgb(40, 179, 139) solid; */
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja_personaje {
+        background: var(--color-texto);
+        box-shadow: 0 0 10px 3px var(--color-zombra);
+        display: flex;
+        height: 390px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .peque_informacion {
+        /* border: 2px rgb(98, 0, 255) solid; */
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .peque_informacion h2{
+        font-size: 20px;
+        text-align: center;
+        font-family: "cinzel_decorative_regular";
+        color: var(--color-letra);
+        /* border: 2px rgb(90, 14, 35) solid; */
+    }
+    .peque_informacion span{
+        /* border: 2px rgb(30, 221, 62) solid; */
+        font-size: 20px;
+        color: var(--color-letra);
+        font-family: "cormorant_garamond-medimun";
+    }
+    .peque_informacion p{
+        /* border: 2px rgb(31, 178, 166) solid; */
+        font-size: 20px;
+        color: var(--color-letra);
+        font-family: "cormorant_garamond-medimun";
+    }
+}
+
+
+/************************** CELULAR TIPO M **********************************/
+
+@media screen and (min-width: 351px) and (max-width: 400px){
+
+  /************************** HEADER SECCION **********************/
+
+    .caja_header{
+        display: flex;
+        gap: 5%;
+        display: flex;
+        align-items: center;
+        height: 95px;
+    }
+    .menu_div img{
+        max-width: 90px;
+    }
+    .ocultar_home{
+        display: none;
+    }
+    .menu_div{
+        width: 85px;
+    } 
+    .menu_div img{
+        width: 85px;
+    }
+
+    /*************************** BOTONES **************************/
+
+    .caja_header .cajita_botones .boton1{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton2{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton3{
+        width: 40px;
+    }
+    .caja_header .cajita_botones{
+        width: 150px;
+    }
+
+    /************************* MODO OSCURO ***************************/
+    .mode_dark{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        gap: 5px;
+      }
+      .mode_dark img{
+        max-width: 30px;
+        cursor: pointer;
+      }
+      .mode_dark img:hover{
+        cursor: pointer;
+        transform: scale(1);
+      }
+
+      /******************* CAJA MAIN *************************/
+
+      .overlay h1{
+        font-size: 30px;
+        width: 90%;
+      } 
+      .caja_main{
+        /* border: 2px red solid; */
+        height: 2950px;
+        gap: 2%;
+      }
+
+      .titulito h1{
+        font-size: 25px;
+        text-align: center;
+        /* border: 2px rgb(40, 179, 139) solid; */
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        /* border: 2px red solid; */
+        width: 90%;
+        height: 700px;
+        margin-left: 16px;
+    }
+    .section h1{
+        text-align: center;
+        /* border: 2px rgb(40, 179, 139) solid; */
+    }
+    .titulito{
+        /* border: 2px rgb(40, 179, 139) solid; */
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja_personaje {
+        background: var(--color-texto);
+        box-shadow: 0 0 10px 3px var(--color-zombra);
+        display: flex;
+        height: 390px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .peque_informacion {
+        /* border: 2px rgb(98, 0, 255) solid; */
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .peque_informacion h2{
+        font-size: 20px;
+        text-align: center;
+        font-family: "cinzel_decorative_regular";
+        color: var(--color-letra);
+        /* border: 2px rgb(90, 14, 35) solid; */
+    }
+    .peque_informacion span{
+        /* border: 2px rgb(30, 221, 62) solid; */
+        font-size: 20px;
+        color: var(--color-letra);
+        font-family: "cormorant_garamond-medimun";
+    }
+    .peque_informacion p{
+        /* border: 2px rgb(31, 178, 166) solid; */
+        font-size: 20px;
+        color: var(--color-letra);
+        font-family: "cormorant_garamond-medimun";
+    }
+}
+
+/************************** CELULAR TIPO S **********************************/
+
+@media screen and (min-width: 401px) and (max-width: 430px){
+
+  /************************** HEADER SECCION **********************/
+
+    .caja_header{
+        display: flex;
+        gap: 5%;
+        display: flex;
+        align-items: center;
+        height: 95px;
+    }
+    .menu_div img{
+        max-width: 90px;
+    }
+    .ocultar_home{
+        display: none;
+    }
+    .menu_div{
+        width: 85px;
+    } 
+    .menu_div img{
+        width: 85px;
+    }
+
+    /*************************** BOTONES **************************/
+
+    .caja_header .cajita_botones .boton1{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton2{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton3{
+        width: 40px;
+    }
+    .caja_header .cajita_botones{
+        width: 150px;
+    }
+
+    /************************* MODO OSCURO ***************************/
+    .mode_dark{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        gap: 5px;
+      }
+      .mode_dark img{
+        max-width: 30px;
+        cursor: pointer;
+      }
+      .mode_dark img:hover{
+        cursor: pointer;
+        transform: scale(1);
+      }
+
+      /******************* CAJA MAIN *************************/
+
+      .overlay h1{
+        font-size: 30px;
+        width: 90%;
+      } 
+      .caja_main{
+        /* border: 2px red solid; */
+        height: 3000px;
+        gap: 2%;
+      }
+
+      .titulito h1{
+        font-size: 25px;
+        text-align: center;
+        /* border: 2px rgb(40, 179, 139) solid; */
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        /* border: 2px red solid; */
+        width: 90%;
+        height: 700px;
+        margin-left: 16px;
+    }
+    .section h1{
+        text-align: center;
+        /* border: 2px rgb(40, 179, 139) solid; */
+    }
+    .titulito{
+        /* border: 2px rgb(40, 179, 139) solid; */
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja_personaje {
+        background: var(--color-texto);
+        box-shadow: 0 0 10px 3px var(--color-zombra);
+        display: flex;
+        height: 390px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .peque_informacion {
+        /* border: 2px rgb(98, 0, 255) solid; */
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .peque_informacion h2{
+        font-size: 20px;
+        text-align: center;
+        font-family: "cinzel_decorative_regular";
+        color: var(--color-letra);
+        /* border: 2px rgb(90, 14, 35) solid; */
+    }
+    .peque_informacion span{
+        /* border: 2px rgb(30, 221, 62) solid; */
+        font-size: 20px;
+        color: var(--color-letra);
+        font-family: "cormorant_garamond-medimun";
+    }
+    .peque_informacion p{
+        /* border: 2px rgb(31, 178, 166) solid; */
+        font-size: 20px;
+        color: var(--color-letra);
+        font-family: "cormorant_garamond-medimun";
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  /************************** HEADER SECCION **********************/
+
+  .caja_header{
+    display: flex;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+.menu_div img{
+    max-width: 120px;
+}
+.menu_div{
+    width: 95px;
+} 
+.menu_div img{
+    width: 120px;
+}
+
+/*************************** BOTONES **************************/
+.caja_header .cajita_botones{
+    width: 500px;
+}
+
+/************************* MODO OSCURO ***************************/
+.mode_dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    gap: 5px;
+  }
+  .mode_dark img{
+    max-width: 30px;
+    cursor: pointer;
+  }
+  .mode_dark img:hover{
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  /******************* CAJA MAIN *************************/
+
+  .overlay h1{
+    font-size: 45px;
+    width: 90%;
+  } 
+  .caja_main{
+    /* border: 2px red solid; */
+    height: 3000px;
+    gap: 4%;
+  }
+
+  .titulito h1{
+    font-size: 45px;
+    text-align: center;
+    /* border: 2px rgb(40, 179, 139) solid; */
+  }
+
+  .section {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* border: 2px red solid; */
+    width: 90%;
+    height: 1250px;
+    margin-left: 40px;
+}
+.section h1{
+    text-align: center;
+    /* border: 2px rgb(40, 179, 139) solid; */
+}
+.titulito{
+    /* border: 2px rgb(40, 179, 139) solid; */
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja_personaje {
+    background: var(--color-texto);
+    box-shadow: 0 0 10px 3px var(--color-zombra);
+    display: flex;
+    height: 390px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 20px;
+}
+.peque_informacion {
+    /* border: 2px rgb(98, 0, 255) solid; */
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.peque_informacion h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: "cinzel_decorative_regular";
+    color: var(--color-letra);
+    /* border: 2px rgb(90, 14, 35) solid; */
+}
+.peque_informacion span{
+    /* border: 2px rgb(30, 221, 62) solid; */
+    font-size: 20px;
+    color: var(--color-letra);
+    font-family: "cormorant_garamond-medimun";
+}
+.peque_informacion p{
+    /* border: 2px rgb(31, 178, 166) solid; */
+    font-size: 20px;
+    color: var(--color-letra);
+    font-family: "cormorant_garamond-medimun";
+}
+}
