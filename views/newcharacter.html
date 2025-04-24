@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="../css/new.css">
+</head>
+<body>
+
+    <!-------------------- ENCABEZADO ---------------------------->
+
+    <header class="caja_header"> 
+        <div class="menu_div">
+            <img id="logo_Drag" src="../storage/img/414P9RxxsuL.png" alt="">
+        </div>
+        <div class="cajita_botones">
+            <button id="home" class="boton1">
+                <img src="../storage/img/home-outline.svg" alt="">
+                <p class="ocultar_home">Home</p>
+            </button>
+            <button class="boton2">
+                <img src="../storage/img/add-circle-outline.svg" alt="">
+                <p class="ocultar_home">Create New</p>
+            </button>
+            <button id="characters" class="boton3">
+                <img src="../storage/img/save-outline.svg" alt="">
+                <p class="ocultar_home">Characters</p>
+            </button>
+        </div>
+        <div class="mode_dark">
+            <img class="modelight" id="mode_light" src="../storage/img/akar-icons_sun-fill.svg" alt="">
+            <img class="modedark" id="mode_dark" src="../storage/img/bi_moon-fill.svg" alt="">
+        </div>
+    </header>
+    <!------------------- CUERPO MAIN ----------------------------->
+
+    <main class="caja_main">
+        <div class="imagen_div">
+          <img src="/storage/img/v7w5s5iakv471.jpg" alt="">
+          <div class="overlay">
+            <h1 class="flotando">Create your new character!</h1>
+          </div>
+        </div>
+
+    <!----------------- SELECTS CONTENEDOR -------------------------->
+
+        <article id="enviado" class="contenedor-selects">
+            <section class="section_crear">
+                <div class="titulo_crear">
+                    <h1>Vamos a Crear Tu Personaje</h1>
+                </div>
+            </section>
+
+    <!-------------------- CREAR NOMBRE ------------------------------>
+
+            <section class="nombre_crear">
+                <div class="titulo_nombre">
+                    <span>Comienza colocando un nombre:<span></span>
+                </div>
+                    <div class="input_nombre">
+                        <form>
+                            <input type="text" id="username" placeholder="nombra tu personaje" required />
+                        </form>
+                    </div>
+            </section>
+
+    <!----------------------- RAZAS ------------------------------------->
+
+            <div class="razas_div">
+                <div class="div_raza">
+                    <span>Selecciona una raza:<span>
+                </div>
+            </div>
+            <!-- CLASE -->
+            <div class="clases_div">
+                <div class="div_clase">
+                    <span>Selecciona una clase:<span>
+                </div>
+            </div>
+            <!-- GENERO -->
+            <div class="genero_div">
+                <div class="div_genero">
+                    <span>Selecciona un genero:<span>
+                </div>
+                <select name="" id="genderselect"></select>
+            </div>
+            <!-- ARMADURA -->
+            <div class="armour_div">
+                <div class="div_armour">
+                    <span>Selecciona una armadura:<span>
+                </div>
+            </div>
+            <!-- ARMA -->
+            <div class="weapon_div">
+                <div class="div_weapon">
+                    <span>Selecciona un arma:<span>
+                </div>
+            </div>
+            <!-- HABILIDADES -->
+            <section class="habilidades">
+                <div class="titulo_hab">
+                    <span>Selecciona tus skills:</span>
+                </div>
+                <div class="destrezas">
+                    <!-- FUERZA -->
+                    <div class="input_Fuerza">
+                        <form class="fuerza_numero">
+                            <span>Fuerza:</span>
+                            <input type="text" id="fuerza" placeholder="Ej. 1 - 20" required />
+                        </form>
+                    </div>
+                    <!-- DESTREZA -->
+                    <div class="input_Destreza">
+                        <form class="Destreza_numero">
+                            <span>Destreza:</span>
+                            <input type="text" id="destreza" placeholder="Ej. 1 - 20" required />
+                        </form>
+                    </div>
+                    <!-- INTELIGENCIA -->
+                    <div class="input_Inteligencia">
+                        <form class="Inteligencia_numero">
+                            <span>Inteligencia:</span>
+                            <input type="text" id="inteligencia" placeholder="Ej. 1 - 20" required />
+                        </form>
+                    </div>
+                    <!-- HABILIDAD -->
+                    <div class="input_habilidad">
+                        <form class="habilidad_numero">
+                            <span>Habilidad:</span>
+                            <input type="text" id="habilidad" placeholder="Ej. 1 - 20" required />
+                        </form>
+                    </div>
+                    <!-- SABIDURIA -->
+                    <div class="input_sabiduria">
+                        <form class="sabiduria_numero">
+                            <span>Sabiduria:</span>
+                            <input type="text" id="sabiduria" placeholder="Ej. 1 - 20" required />
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- SPELLS -->
+            <div class="spell_div">
+                <div class="div_spell">
+                    <span>Seleccione un echizo:<span>
+                </div>
+            </div>
+            <!-- ACCESORIOS -->
+            <div class="accesor_div">
+                <div class="div_accesor">
+                    <span>Seleccione un accesorio:<span>
+                </div>
+            </div>
+            <form id="userForm" class="btonsito">
+                <button type="submit">Guardar</button>
+            </form>
+        </article>
+    </main>    
+    <!-- SCRIPT -->
+     <script src="../js/newcharacter.js"></script>
+     <script src="../js/d&d.js"></script>
+     <script src="../js/mockapi.js"></script>
+</body>
+</html>

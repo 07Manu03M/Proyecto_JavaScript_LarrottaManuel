@@ -2,10 +2,6 @@
 
 /*************************** BOTONES **************************/
 
-.caja_header .cajita_botones{
-    width: 40%;
-}
-
 /************************* MODO OSCURO ***************************/
 .mode_dark{
     display: flex;
@@ -15,7 +11,7 @@
     gap: 15%;
   }
   .mode_dark img{
-    max-width: 30px;
+    max-width: 40px;
     cursor: pointer;
   }
   .mode_dark img:hover{

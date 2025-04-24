@@ -11,7 +11,7 @@ let logo = document.getElementById("logo_Drag");
 let darklogo = document.getElementById("logo_Drag")
 
 create.addEventListener("click",()=>{
-    window.location.href = "../views/newcharacter.html"
+    window.location.href = "../views/home.html"
 })
 characters.addEventListener("click",()=>{
     window.location.href = "../views/example.html"
@@ -52,3 +52,4 @@ lightchange.addEventListener("click",()=>{
     body.classList.toggle("dark-mode");
     localStorage.setItem("theme", "light");
 })
+
