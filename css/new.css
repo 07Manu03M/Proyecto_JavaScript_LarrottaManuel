@@ -709,6 +709,1019 @@ body{
     transform: scale(1.1);
     box-shadow: 0 0 10px 2px var(--color-zombra-actual);
   }
+
+
+  /* DESING RESPONSIVE PHONE S */
+
+  @media screen and (min-width: 320px) and (max-width: 350px){
+
+    /************************** HEADER SECCION **********************/
+  
+      .caja_header{
+          display: flex;
+          gap: 5%;
+          display: flex;
+          align-items: center;
+          height: 50px;
+      }
+      .menu_div img{
+          max-width: 90px;
+      }
+      .ocultar_home{
+          display: none;
+      }
+      .menu_div{
+          width: 85px;
+      } 
+      .menu_div img{
+          width: 85px;
+      }
+  
+      /*************************** BOTONES **************************/
+  
+      .caja_header .cajita_botones .boton1{
+          width: 40px;
+      }
+      .caja_header .cajita_botones .boton2{
+          width: 40px;
+      }
+      .caja_header .cajita_botones .boton3{
+          width: 40px;
+      }
+      .caja_header .cajita_botones{
+          width: 150px;
+      }
+  
+      /************************* MODO OSCURO ***************************/
+      .mode_dark{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          gap: 5px;
+        }
+        .mode_dark img{
+          max-width: 30px;
+          cursor: pointer;
+        }
+        .mode_dark img:hover{
+          cursor: pointer;
+          transform: scale(1);
+        }
+  
+        /******************* CAJA MAIN *************************/
+  
+        .overlay h1{
+          font-size: 30px;
+          width: 90%;
+        } 
+        .caja_main{
+          /* border: 2px red solid; */
+          height: 2000px;
+          gap: 2%;
+        }
+        /* ARTICLE */
+        .contenedor-selects{
+          /* border: 2px red solid; */
+          height: 1500px;
+          padding: 30px;
+        }
+        .section_crear {
+          width: 95%;
+        }
+        .titulo_crear h1{
+          font-size: 21px;
+          text-align: center;
+        }
+        /* NOMBRE */
+        .nombre_crear {
+          width: 100%;
+          margin: auto;
+          height: 200px;
+        }
+        .titulo_nombre {
+          font-size: 25px;
+        }
+        .input_nombre input{
+          width: 100%;
+        }
+        /* RAZA */
+        .razas_div {
+          /* border: 2px blue solid; */
+          width: 100%;
+          margin: auto;
+        }
+        .div_raza span{
+          font-size: 25px;
+        }
+        /* clases */
+        .clases_div {
+          width: 100%;
+          margin: auto;
+        }
+        .div_clase span{
+          font-size: 25px;
+        }
+        /* GENERO */
+        .genero_div {
+          width: 100%;
+          margin: auto;
+        }
+        .div_genero span{
+          font-size: 25px;
+        }
+        /* ARMOR */
+        .armour_div {
+          width: 100%;
+          margin: auto;
+        }
+        .div_armour span{
+          font-size: 25px;
+        }
+        /* WEAPON */
+        .weapon_div {
+          width: 100%;
+          margin: auto;
+        }
+        .div_weapon span{
+          font-size: 25px;
+        }
+        /* HABILIDADES */
+        .habilidades{
+          /* border: 2px rgb(36, 156, 82) solid; */
+          height: 300px;
+          width: 100%;
+          margin: auto;
+        }
+        .destrezas {
+          align-items: center;
+          height: auto;
+          gap: 50px;
+          flex-wrap: wrap;
+          margin: auto;
+          width: 100%;
+          padding: 20px;
+          /* border: 2px rgb(30, 175, 69) solid; */
+        }
+      
+        .input_Fuerza,
+        .input_Destreza,
+        .input_Inteligencia,
+        .input_habilidad,
+        .input_sabiduria {
+          width: 35%;
+          padding-left: 0;
+          /* border: 2px blue solid; */
+        }
+      
+        .fuerza_numero input,
+        .Destreza_numero input,
+        .Inteligencia_numero input,
+        .habilidad_numero input,
+        .sabiduria_numero input {
+          width: 100%;
+          
+          padding-left: 10px;
+          /* border: 2px blue solid; */
+        }
+      
+        .titulo_hab {
+          font-size: 25px;
+          text-align: left;
+          /* border: 2px blue solid; */
+        }
+
+        /* HECHIZOS */
+        .spell_div {
+          width: 100%;
+          margin: auto;
+        }
+        .div_spell span{
+          font-size: 25px;
+        }
+        /* ACCESORIOS */
+        .accesor_div {
+          width: 100%;
+          margin: auto;
+        }
+        .div_accesor span{
+          font-size: 25px;
+        }
+        /* BOTON */
+        .btonsito {
+          /* border: 2px red solid; */
+          width: 90%;
+        }
+        .btonsito button{
+          width: 100%;
+        }
+}
+
+/* DESING RESPONSIVE PHONE M */
+@media screen and (min-width: 351px) and (max-width: 400px){
+
+  /************************** HEADER SECCION **********************/
+
+    .caja_header{
+        display: flex;
+        gap: 5%;
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    .menu_div img{
+        max-width: 90px;
+    }
+    .ocultar_home{
+        display: none;
+    }
+    .menu_div{
+        width: 85px;
+    } 
+    .menu_div img{
+        width: 85px;
+    }
+
+    /*************************** BOTONES **************************/
+
+    .caja_header .cajita_botones .boton1{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton2{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton3{
+        width: 40px;
+    }
+    .caja_header .cajita_botones{
+        width: 150px;
+    }
+
+    /************************* MODO OSCURO ***************************/
+    .mode_dark{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        gap: 5px;
+      }
+      .mode_dark img{
+        max-width: 30px;
+        cursor: pointer;
+      }
+      .mode_dark img:hover{
+        cursor: pointer;
+        transform: scale(1);
+      }
+
+      /******************* CAJA MAIN *************************/
+
+      .overlay h1{
+        font-size: 30px;
+        width: 90%;
+      } 
+      .caja_main{
+        /* border: 2px red solid; */
+        height: 2250px;
+        gap: 2%;
+      }
+      /* ARTICLE */
+      .contenedor-selects{
+        /* border: 2px red solid; */
+        height: 1500px;
+        padding: 30px;
+      }
+      .section_crear {
+        width: 95%;
+      }
+      .titulo_crear h1{
+        font-size: 21px;
+        text-align: center;
+      }
+      /* NOMBRE */
+      .nombre_crear {
+        width: 100%;
+        margin: auto;
+        height: 200px;
+      }
+      .titulo_nombre {
+        font-size: 25px;
+      }
+      .input_nombre input{
+        width: 100%;
+      }
+      /* RAZA */
+      .razas_div {
+        /* border: 2px blue solid; */
+        width: 100%;
+        margin: auto;
+      }
+      .div_raza span{
+        font-size: 25px;
+      }
+      /* clases */
+      .clases_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_clase span{
+        font-size: 25px;
+      }
+      /* GENERO */
+      .genero_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_genero span{
+        font-size: 25px;
+      }
+      /* ARMOR */
+      .armour_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_armour span{
+        font-size: 25px;
+      }
+      /* WEAPON */
+      .weapon_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_weapon span{
+        font-size: 25px;
+      }
+      /* HABILIDADES */
+      .habilidades{
+        /* border: 2px rgb(36, 156, 82) solid; */
+        height: 300px;
+        width: 100%;
+        margin: auto;
+      }
+      .destrezas {
+        align-items: center;
+        height: auto;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        /* border: 2px rgb(30, 175, 69) solid; */
+      }
+    
+      .input_Fuerza,
+      .input_Destreza,
+      .input_Inteligencia,
+      .input_habilidad,
+      .input_sabiduria {
+        width: 35%;
+        padding-left: 0;
+        /* border: 2px blue solid; */
+      }
+    
+      .fuerza_numero input,
+      .Destreza_numero input,
+      .Inteligencia_numero input,
+      .habilidad_numero input,
+      .sabiduria_numero input {
+        width: 100%;
+        
+        padding-left: 10px;
+        /* border: 2px blue solid; */
+      }
+    
+      .titulo_hab {
+        font-size: 25px;
+        text-align: left;
+        /* border: 2px blue solid; */
+      }
+
+      /* HECHIZOS */
+      .spell_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_spell span{
+        font-size: 25px;
+      }
+      /* ACCESORIOS */
+      .accesor_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_accesor span{
+        font-size: 25px;
+      }
+      /* BOTON */
+      .btonsito {
+        /* border: 2px red solid; */
+        width: 90%;
+      }
+      .btonsito button{
+        width: 100%;
+      }
+}
+
+/* DESING RESPONSIVE PHONE L */
+@media screen and (min-width: 351px) and (max-width: 400px){
+
+  /************************** HEADER SECCION **********************/
+
+    .caja_header{
+        display: flex;
+        gap: 5%;
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+    .menu_div img{
+        max-width: 90px;
+    }
+    .ocultar_home{
+        display: none;
+    }
+    .menu_div{
+        width: 85px;
+    } 
+    .menu_div img{
+        width: 85px;
+    }
+
+    /*************************** BOTONES **************************/
+
+    .caja_header .cajita_botones .boton1{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton2{
+        width: 40px;
+    }
+    .caja_header .cajita_botones .boton3{
+        width: 40px;
+    }
+    .caja_header .cajita_botones{
+        width: 150px;
+    }
+
+    /************************* MODO OSCURO ***************************/
+    .mode_dark{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        gap: 5px;
+      }
+      .mode_dark img{
+        max-width: 30px;
+        cursor: pointer;
+      }
+      .mode_dark img:hover{
+        cursor: pointer;
+        transform: scale(1);
+      }
+
+      /******************* CAJA MAIN *************************/
+
+      .overlay h1{
+        font-size: 30px;
+        width: 90%;
+      } 
+      .caja_main{
+        /* border: 2px red solid; */
+        height: 2250px;
+        gap: 2%;
+      }
+      /* ARTICLE */
+      .contenedor-selects{
+        /* border: 2px red solid; */
+        height: 1500px;
+        padding: 30px;
+      }
+      .section_crear {
+        width: 95%;
+      }
+      .titulo_crear h1{
+        font-size: 21px;
+        text-align: center;
+      }
+      /* NOMBRE */
+      .nombre_crear {
+        width: 100%;
+        margin: auto;
+        height: 200px;
+      }
+      .titulo_nombre {
+        font-size: 25px;
+      }
+      .input_nombre input{
+        width: 100%;
+      }
+      /* RAZA */
+      .razas_div {
+        /* border: 2px blue solid; */
+        width: 100%;
+        margin: auto;
+      }
+      .div_raza span{
+        font-size: 25px;
+      }
+      /* clases */
+      .clases_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_clase span{
+        font-size: 25px;
+      }
+      /* GENERO */
+      .genero_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_genero span{
+        font-size: 25px;
+      }
+      /* ARMOR */
+      .armour_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_armour span{
+        font-size: 25px;
+      }
+      /* WEAPON */
+      .weapon_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_weapon span{
+        font-size: 25px;
+      }
+      /* HABILIDADES */
+      .habilidades{
+        /* border: 2px rgb(36, 156, 82) solid; */
+        height: 300px;
+        width: 100%;
+        margin: auto;
+      }
+      .destrezas {
+        align-items: center;
+        height: auto;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+        padding: 20px;
+        /* border: 2px rgb(30, 175, 69) solid; */
+      }
+    
+      .input_Fuerza,
+      .input_Destreza,
+      .input_Inteligencia,
+      .input_habilidad,
+      .input_sabiduria {
+        width: 35%;
+        padding-left: 0;
+        /* border: 2px blue solid; */
+      }
+    
+      .fuerza_numero input,
+      .Destreza_numero input,
+      .Inteligencia_numero input,
+      .habilidad_numero input,
+      .sabiduria_numero input {
+        width: 100%;
+        
+        padding-left: 10px;
+        /* border: 2px blue solid; */
+      }
+    
+      .titulo_hab {
+        font-size: 25px;
+        text-align: left;
+        /* border: 2px blue solid; */
+      }
+
+      /* HECHIZOS */
+      .spell_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_spell span{
+        font-size: 25px;
+      }
+      /* ACCESORIOS */
+      .accesor_div {
+        width: 100%;
+        margin: auto;
+      }
+      .div_accesor span{
+        font-size: 25px;
+      }
+      /* BOTON */
+      .btonsito {
+        /* border: 2px red solid; */
+        width: 90%;
+      }
+      .btonsito button{
+        width: 100%;
+      }
+}
+
+@media screen and (min-width: 401px) and (max-width: 440px){
+  /************************** HEADER SECCION **********************/
+
+  .caja_header{
+    display: flex;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.menu_div img{
+    max-width: 90px;
+}
+.ocultar_home{
+    display: none;
+}
+.menu_div{
+    width: 85px;
+} 
+.menu_div img{
+    width: 85px;
+}
+
+/*************************** BOTONES **************************/
+
+.caja_header .cajita_botones .boton1{
+    width: 40px;
+}
+.caja_header .cajita_botones .boton2{
+    width: 40px;
+}
+.caja_header .cajita_botones .boton3{
+    width: 40px;
+}
+.caja_header .cajita_botones{
+    width: 150px;
+}
+
+/************************* MODO OSCURO ***************************/
+.mode_dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    gap: 5px;
+  }
+  .mode_dark img{
+    max-width: 30px;
+    cursor: pointer;
+  }
+  .mode_dark img:hover{
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  /******************* CAJA MAIN *************************/
+
+  .overlay h1{
+    font-size: 30px;
+    width: 90%;
+  } 
+  .caja_main{
+    /* border: 2px red solid; */
+    height: 2300px;
+    gap: 2%;
+  }
+  /* ARTICLE */
+  .contenedor-selects{
+    /* border: 2px red solid; */
+    height: 1500px;
+    padding: 30px;
+  }
+  .section_crear {
+    width: 95%;
+  }
+  .titulo_crear h1{
+    font-size: 21px;
+    text-align: center;
+  }
+  /* NOMBRE */
+  .nombre_crear {
+    width: 100%;
+    margin: auto;
+    height: 200px;
+  }
+  .titulo_nombre {
+    font-size: 25px;
+  }
+  .input_nombre input{
+    width: 100%;
+  }
+  /* RAZA */
+  .razas_div {
+    /* border: 2px blue solid; */
+    width: 100%;
+    margin: auto;
+  }
+  .div_raza span{
+    font-size: 25px;
+  }
+  /* clases */
+  .clases_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_clase span{
+    font-size: 25px;
+  }
+  /* GENERO */
+  .genero_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_genero span{
+    font-size: 25px;
+  }
+  /* ARMOR */
+  .armour_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_armour span{
+    font-size: 25px;
+  }
+  /* WEAPON */
+  .weapon_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_weapon span{
+    font-size: 25px;
+  }
+  /* HABILIDADES */
+  .habilidades{
+    /* border: 2px rgb(36, 156, 82) solid; */
+    height: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  .destrezas {
+    align-items: center;
+    height: auto;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    /* border: 2px rgb(30, 175, 69) solid; */
+  }
+
+  .input_Fuerza,
+  .input_Destreza,
+  .input_Inteligencia,
+  .input_habilidad,
+  .input_sabiduria {
+    width: 35%;
+    padding-left: 0;
+    /* border: 2px blue solid; */
+  }
+
+  .fuerza_numero input,
+  .Destreza_numero input,
+  .Inteligencia_numero input,
+  .habilidad_numero input,
+  .sabiduria_numero input {
+    width: 100%;
+    
+    padding-left: 10px;
+    /* border: 2px blue solid; */
+  }
+
+  .titulo_hab {
+    font-size: 25px;
+    text-align: left;
+    /* border: 2px blue solid; */
+  }
+
+  /* HECHIZOS */
+  .spell_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_spell span{
+    font-size: 25px;
+  }
+  /* ACCESORIOS */
+  .accesor_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_accesor span{
+    font-size: 25px;
+  }
+  /* BOTON */
+  .btonsito {
+    /* border: 2px red solid; */
+    width: 90%;
+  }
+  .btonsito button{
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  /************************** HEADER SECCION **********************/
+
+  .caja_header{
+    display: flex;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    height: 110px;
+}
+.menu_div img{
+    max-width: 130px;
+}
+.menu_div{
+    width: 85px;
+} 
+.menu_div img{
+    width: 130px;
+}
+
+/*************************** BOTONES **************************/
+.caja_header .cajita_botones{
+    width: 500px;
+}
+
+/************************* MODO OSCURO ***************************/
+.mode_dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    gap: 5px;
+  }
+  .mode_dark img{
+    max-width: 30px;
+    cursor: pointer;
+  }
+  .mode_dark img:hover{
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  /******************* CAJA MAIN *************************/
+
+  .overlay h1{
+    font-size: 30px;
+    width: 90%;
+  } 
+  .caja_main{
+    /* border: 2px red solid; */
+    height: 2800px;
+  }
+  /* ARTICLE */
+  .contenedor-selects{
+    /* border: 2px red solid; */
+    height: 1600px;
+    padding: 30px;
+  }
+  .section_crear {
+    width: 95%;
+  }
+  .titulo_crear h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  /* NOMBRE */
+  .nombre_crear {
+    width: 100%;
+    margin: auto;
+    height: 200px;
+  }
+  .titulo_nombre {
+    font-size: 30px;
+  }
+  .input_nombre input{
+    width: 100%;
+  }
+  /* RAZA */
+  .razas_div {
+    /* border: 2px blue solid; */
+    width: 100%;
+    margin: auto;
+  }
+  .div_raza span{
+    font-size: 30px;
+  }
+  /* clases */
+  .clases_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_clase span{
+    font-size: 30px;
+  }
+  /* GENERO */
+  .genero_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_genero span{
+    font-size: 30px;
+  }
+  /* ARMOR */
+  .armour_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_armour span{
+    font-size: 30px;
+  }
+  /* WEAPON */
+  .weapon_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_weapon span{
+    font-size: 30px;
+  }
+  /* HABILIDADES */
+  .habilidades{
+    /* border: 2px rgb(36, 156, 82) solid; */
+    height: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  .destrezas {
+    align-items: center;
+    height: auto;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    /* border: 2px rgb(30, 175, 69) solid; */
+  }
+
+  .input_Fuerza,
+  .input_Destreza,
+  .input_Inteligencia,
+  .input_habilidad,
+  .input_sabiduria {
+    width: 35%;
+    padding-left: 0;
+    font-size: 30px;
+    /* border: 2px blue solid; */
+  }
+
+  .fuerza_numero input,
+  .Destreza_numero input,
+  .Inteligencia_numero input,
+  .habilidad_numero input,
+  .sabiduria_numero input {
+    width: 100%;
+    font-size: 30px;
+    padding-left: 10px;
+    /* border: 2px blue solid; */
+  }
+
+  .titulo_hab {
+    font-size: 30px;
+    text-align: left;
+    /* border: 2px blue solid; */
+  }
+
+  /* HECHIZOS */
+  .spell_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_spell span{
+    font-size: 30px;
+  }
+  /* ACCESORIOS */
+  .accesor_div {
+    width: 100%;
+    margin: auto;
+  }
+  .div_accesor span{
+    font-size: 30px;
+  }
+  /* BOTON */
+  .btonsito {
+    /* border: 2px red solid; */
+    width: 90%;
+  }
+  .btonsito button{
+    width: 100%;
+  }
+}
+
+
   
   
   
