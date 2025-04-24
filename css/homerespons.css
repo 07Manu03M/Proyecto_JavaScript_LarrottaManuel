@@ -713,3 +713,209 @@ font-size: 17px;
   font-size: 17px;
   }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  .caja_header{
+    padding: 15px;
+    display: flex;
+    gap: 5%;
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+.menu_div img{
+    max-width: 90px;
+}
+.menu_div{
+    width: 75px;
+} 
+.menu_div img{
+    width: 85px;
+}
+
+/*************************** BOTONES **************************/
+.caja_header .cajita_botones{
+    width: 510px;
+}
+
+/************************* MODO OSCURO ***************************/
+.mode_dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    gap: 5px;
+  }
+  .mode_dark img{
+    max-width: 50px;
+    cursor: pointer;
+  }
+  .mode_dark img:hover{
+    cursor: pointer;
+    transform: scale(1);
+  }
+
+  /******************* CAJA MAIN *************************/
+
+  .overlay h1{
+    font-size: 30px;
+    width: 90%;
+  } 
+  .caja_main{
+    /* border: 2px red solid; */
+    height: 3200px;
+    gap: 5%;
+  }
+
+  /************************* SECTIONS ***********************/
+
+  .div_sections{
+    gap: 2%;
+  }
+  .caja_section{
+    height: 440px;
+    padding: 15px;
+  }
+
+  /******************* CAJA DE BIENVENIDA *******************/
+
+  .caja_section .div_bienvenido h1{
+    font-size: 20px;
+    text-align: center;
+    text-align: left;
+
+  }
+  .div_bienvenido{
+    gap: 15px;
+  }
+  .caja_section img{
+    max-width: 250px;
+  }
+  .div_bienvenido{
+    width: 800px;
+    height: 70%;
+  }
+  .caja_section .div_bienvenido p{
+    font-size: 17px;
+    text-align: center;
+    text-align: left;
+  }
+
+  /************************ COMO USAR ***********************/
+
+  .section_usar{
+    padding: 20px;
+    height: 400px;
+  }
+  .div_titulo_usar h1{
+    font-size: 20px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+  }
+  .como_usar{
+    width: 95%;
+    gap: 5%;
+  }
+  .como_usar img{
+    max-width: 200px;
+  }
+  .lista_comousar{
+    width: 100%;
+  }
+  .lista_comousar li{
+    font-size: 17px;
+    text-align: left;
+  }
+
+  /********************** COMO FUNCIONA ********************/
+
+  .como_funciona {
+    height: 350px;
+    padding: 20px;
+    gap: 5%;
+  }
+  .div_funciona-information {
+    width: 300px;
+  }
+  .div_funciona-information ul li{
+    font-size: 17px;
+  }
+  .div_funciona-information h1{
+    font-size: 20px;
+  }
+  .imagen_como-funciona img{
+    max-width: 230px;
+  }
+
+  /********************* RESPONSE ********************/
+
+  .ocultar_repons{
+    display: none;
+  }
+  .section_responsive {
+    display: flex;
+    height: 400px;
+    gap: 15%;
+  }
+  .div_objetivo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  .titulo_obj {
+    width: 100%;
+  }
+  .titulo_obj h1{
+    font-size: 20px;
+    width: 100%;
+  }
+  .desc_obj {
+    width: 100%;
+  }
+  .desc_obj p{
+    font-size: 17px;
+    width: 100%;
+  }
+  .div_respons {
+    width: 100%;
+  }
+  .titulo_respons {
+    text-align: center;
+  }
+  .titulo_respons h1{
+    font-size: 20px;
+  }
+  .desc_respons p{
+    font-size: 17px;
+    width: 100%;
+  }
+  /******************************************* PORQUE USARLO? *********************************/
+
+.porqueusar {
+width: 90%;
+height: 400px;
+padding: 20px;
+}
+.titulo_usar {
+display: flex;
+flex-direction: column;
+height: 80%;
+gap: 10%;
+width: 95%;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+.titulo_usar h1{
+font-size: 20px;
+text-align: center;
+}
+.titulo_usar ul li{
+font-size: 17px;
+}
+}
